@@ -7,43 +7,64 @@
   <title>Document</title>
 
   <style>
+  *{
+    box-sizing: border-box;
+  }
+  html{
+    background-color: #b3ffab;
+  }
+
+    .web::after{
+      content: "";
+      clear: both;
+      display: table;
+    }
     .web{
-      width:49%;
+      border: 1px solid white;
+      width:59.5%;
       float:left;
+      text-align: center;
+      background: linear-gradient(to left, #b3ffab, #12fff7);
     }
     .web img {
       width : 98%;
       height: 98%;
-      border: 1px solid  black;
     }
     .mob{
-      width:49%;
+      border: 1px solid white;
+      width:39.5%;
       float:right;
+      text-align: center;
+      background: linear-gradient(to right, #b3ffab, #11ffbd);
     }
     .mob img{
-      width : 45%;
-      height: 45%;
-      border: 1px solid  black;
+      width : 60%;
+      height: 60%;
     }
+
+    @media screen and (max-width: 800px) {
+  .web, .mob {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
   </style>
 </head>
 <body>
   <div class="web">
     <h1>mockup web</h1>
     <p>Beranda Web</p>
-    <img src="mockup pweb/Beranda Web.png" alt="">
+    <img src="mockup pweb/Beranda web.png" alt="">
     <p>Daftar 1 web</p>
-    <img src="mockup pweb/Daftar 1 Web.png" alt="">
+    <img src="mockup pweb/Daftar 1 web.png" alt="">
     <p>Daftar 2 Web</p>
-    <img src="mockup pweb/Daftar 2 Web.png" alt="">
+    <img src="mockup pweb/Daftar 2 web.png" alt="">
     <p>Masuk Web</p>
-    <img src="mockup pweb/Masuk Web.png" alt="">
+    <img src="mockup pweb/Masuk web.png" alt="">
     <p>Semua komik Web</p>
-    <img src="mockup pweb/Semua Komik Web.png" alt="">
+    <img src="mockup pweb/Semua komik web.png" alt="">
     <p>Tentang kami Web</p>
-    <img src="mockup pweb/Tentang Kami Web.png" alt="">
+    <img src="mockup pweb/Tentang kami web.png" alt="">
     <p>Terbaru Web</p>
-    <img src="mockup pweb/Terbaru Web.png" alt="">
+    <img src="mockup pweb/Terbaru web.png" alt="">
 
   </div>
   <div class="mob">
@@ -59,7 +80,7 @@
     <p>Menu Mobile</p>
     <img src="mockup pweb/Menu Mobile.png" alt="">
     <p>Update terbaru Mobile</p>
-    <img src="mockup pweb/Update Terbaru.png" alt="">
+    <img src="mockup pweb/Update terbaru.png" alt="">
   </div>
 
 
