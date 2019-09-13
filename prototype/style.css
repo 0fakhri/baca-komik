@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  background-color: #b3ffab;
+}
+
+  .web::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+.web{
+  border: 1px solid white;
+  width:59.5%;
+  float:left;
+  text-align: center;
+  background: linear-gradient(to left, #b3ffab, #12fff7);
+}
+.web img {
+  width : 98%;
+  height: 98%;
+}
+.mob{
+  border: 1px solid white;
+  width:39.5%;
+  float:right;
+  text-align: center;
+  background: linear-gradient(to right, #b3ffab, #11ffbd);
+}
+.mob img{
+  width : 60%;
+  height: 60%;
+}
+
+@media screen and (max-width: 800px) {
+.web, .mob {
+width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+}
