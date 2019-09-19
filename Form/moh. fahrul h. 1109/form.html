@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style media="screen">
+    .bungkus{
+      margin: 20px;
+      padding: 10px;
+      text-align: center;
+      background-color:grey;
+    }
+
+    .sform{
+      font-size:18px;
+      width:700px;
+      height:25px;
+      border-radius: 20px;;
+      text-align: center;
+      margin : 5px;
+    }
+    .tombol{
+      width:100px;
+      height:35px;
+    }
+
+    @media screen and (max-width: 800px) {
+      .sform{
+        font-size:18px;
+        width:90%;
+        height:25px;
+        border-radius: 20px;;
+        text-align: center;
+        margin : 5px;
+      }
+      .tombol{
+        width:100px;
+        height:35px;
+      }
+    }
+</head>
+</style>
+<body>
+  <div class="bungkus">
+    <form action="">
+      <h1>input form isikan</h1> <hr>
+      <input class="sform" type="text" placeholder="Nama">
+      <input class="sform" type="email" placeholder="Email">
+
+      <input class="sform" type="password" placeholder="Password"> <br>
+      <input type="radio" name="gender" value="laki">Perempuan <br>
+      <input type="radio" name="gender" value="laki" checked>Laki - Laki <br>
+
+      <input type="checkbox" name="" value="">saya menyetujui<br>
+
+
+      <br><input class="tombol sform" type="submit" value="kirim">
+      <input class="tombol sform" type="reset" value="reset">
+    </form>
+
+  </div>
+</body>
+</html>
