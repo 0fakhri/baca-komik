@@ -1,49 +1,133 @@
 <!DOCTYPE html>
 
 <head>
-    
     <title>Tugas Praktikum Perancangan Web</title>
-</head>
-<body style="padding-top: 80px; background-image: url(https://images.wallpaperscraft.com/image/minimalism_aircraft_flight_74406_1366x768.jpg)">
-       
-        
-<div style="margin: auto;
-            width: 30%;
-            border: 3px solid rgb(255, 255, 255);
-            text-align: center;
-            padding-bottom: 10px;">
+    <style>
+    body{
+        padding-top: 80px; 
+        background-image: url(https://cache.desktopnexus.com/thumbseg/2488/2488738-bigthumbnail.jpg);
+        background-size: cover;
+    }
     
-    <h2 style="color: white">Form pendaftaran</h2>
-    <div style="padding: 10px">        
+    .kotak1{
+        padding: 20px;     
+        float: left;
+        width: 45%;
+        border: 3px solid rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 20px;       
+    }
+
+    .kotak2{
+        padding: 20px;  
+        float: right;
+        width: 45%;
+        border: 3px solid rgb(255, 255, 255);
+        text-align: center;        
+        border-radius: 20px;   
+    }
+    
+    @media screen and (max-width:1000px) {
+    .kotak1 , .kotak2 {width:90%;}}
+
+    .kotakIsi{
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .kotakIsi input{
+        color: white;
+        outline: none;
+        border: none;
+        background: none;
+        border-bottom: 2px solid white;
+        margin: 5px 10px;
+        font-size: 16px;
+    }
+    .kotakIsi select{
+        color: white;
+        outline: none;
+        border: none;
+        background: none;
+        border-bottom: 2px solid white;
+        padding: 5px;
+    }
+
+    .btn{
+        width: 60%;
+        background: none;
+        border: 2px solid white;
+        font-size: 15px;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .btn:hover{
+        background-color: white;
+        color: black
+    }
+    </style>
+</head>
+<body>
+
+        
+<div class="kotak1">
+    
+    <h2 style="color: white">Daftar</h2>
+    
+    <div class="kotakIsi">        
         <input type="text" placeholder="Username" >
     </div>
-    <div style="padding: 10px">        
+    
+    <div class="kotakIsi">        
         <input type="email" placeholder="Email" >
     </div>
-    <div style="padding: 10px">        
+
+    <div class="kotakIsi">        
+        <input type="password" placeholder="Katasandi" >
+
+    <div class="kotakIsi">        
         <input type="number" placeholder="Umur" >
     </div>
-    <div style="padding: 10px">        
-        <input type="password" placeholder="Katasandi" >
+    
     </div>
-    <div style="padding: 10px">        
+
+    <div class="kotakIsi">        
         <input type="date" >
     </div>
-    <div style="padding: 10px">
+
+    <div class="kotakIsi">
         <select>
             <option disabled selected>--Jenis Kelamin--</option>
             <option value="laki-laki">Laki-Laki</option>
             <option value="perempuan">Perempuan</option>
         </select>
     </div>
-    <div>        
-        <input type="checkbox" >
+    <div class="kotakIsi">        
+        <input type="checkbox" required>
         <label style="color: white">Saya menyetujui persyaratan</label>
     </div>
-    <button >
+    <a href="">
+    <button class="btn">
         Submit
     </button>
+    </a>
 </div>
+
+<div class="kotak2">
+    
+    <h2 style="color: white">Masuk</h2>
+    
+    <div class="kotakIsi">        
+        <input type="text" placeholder="Username" >
+    </div>
+    
+    <div class="kotakIsi">        
+        <input type="password" placeholder="Katasandi" >
+    </div>
+    <button class="btn">
+        Submit
+    </button>
     
 </body>
 </html>
