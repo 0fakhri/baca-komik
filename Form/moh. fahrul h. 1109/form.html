@@ -7,60 +7,73 @@
   <title>Document</title>
 
   <style media="screen">
-    .bungkus{
+    .bungkus1{
       margin: 20px;
       padding: 10px;
       text-align: center;
       background-color:grey;
+      width: 45%;
+      float: left;
+    }
+    .bungkus2{
+      margin: 20px;
+      padding: 10px;
+      text-align: center;
+      background-color:grey;
+      width: 45%;
+      float: right;
     }
 
     .sform{
       font-size:18px;
-      width:700px;
+      width:40%;
       height:25px;
       border-radius: 20px;;
       text-align: center;
       margin : 5px;
     }
     .tombol{
-      width:100px;
+      width:30%;
       height:35px;
     }
 
     @media screen and (max-width: 800px) {
       .sform{
         font-size:18px;
-        width:90%;
+        width:80%;
         height:25px;
         border-radius: 20px;;
         text-align: center;
         margin : 5px;
       }
       .tombol{
-        width:100px;
+        width:30%;
         height:35px;
       }
     }
 </head>
 </style>
 <body>
-  <div class="bungkus">
+  <div class="bungkus1">
     <form action="">
-      <h1>input form isikan</h1> <hr>
-      <input class="sform" type="text" placeholder="Nama">
-      <input class="sform" type="email" placeholder="Email">
-
+      <h1>input form daftar</h1> <hr>
+      <input class="sform" type="text" placeholder="Nama"><br>
+      <input class="sform" type="email" placeholder="Email"> <br>
       <input class="sform" type="password" placeholder="Password"> <br>
       <input type="radio" name="gender" value="laki">Perempuan <br>
       <input type="radio" name="gender" value="laki" checked>Laki - Laki <br>
-
       <input type="checkbox" name="" value="">saya menyetujui<br>
-
-
-      <br><input class="tombol sform" type="submit" value="kirim">
-      <input class="tombol sform" type="reset" value="reset">
+      <br><input class="tombol sform" type="submit" value="dafatar">
     </form>
-
+  </div>
+  <div class="bungkus2">
+    <form action="">
+      <h1>input form login</h1> <hr>
+      <input class="sform" type="email" placeholder="Email"> <br>
+      <input class="sform" type="password" placeholder="Password"> <br>
+      <input type="checkbox" name="" value="">ingat saya<br>
+      <br><input class="tombol sform" type="submit" value="login">
+    </form>
   </div>
 </body>
 </html>
