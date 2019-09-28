@@ -1,0 +1,48 @@
+.menu {    
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    height: 5%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    font-weight: bold;
+    display: block;
+    color: rgb(59, 59, 59);
+    text-align: center;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.logo a img{
+    width: 50px;    
+    margin-top: -7px;
+}
+  
+
+li a:hover {
+    color : black;
+}
+
+/* .active {
+    border-bottom: 2px solid black
+} */
+
+.kol1{
+    float: left;
+    width: 25px;
+}
+
+
