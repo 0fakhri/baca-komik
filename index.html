@@ -5,40 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-
     <title>BACA KOMIK</title>
 
 </head>
 <body>
-    <div class="menu">
-        <ul>
-          <li> <a href="index.html">
-              <img src="asset/BACA KOMIK ICON.png" alt="">
-          </a></li>
-            <li><a href="index.html">BERANDA</a> </li>
-            <li><a href="semua.html">SEMUA KOMIK</a> </li>
-            <li><a href="terbaru.html">TERBARU</a></li>
-            <form action="">
-                <input type="text" placeholder="Cari">
-            </form>
-            <li><a href="masuk.html">MASUK</a></li>
-        </ul>
-    </div>
+        <nav>
+            <ul>
+                <div class="kiri">
+                    <li><a href="index.html" ><img src="asset/BACA KOMIK ICON.png" alt=""></a></li>
+                    <li><a href="index.html" class="active">BERANDA</a> </li>
+                    <li><a href="semua.html">SEMUA KOMIK</a> </li>
+                    <li><a href="terbaru.html">TERBARU</a></li>
+                </div>
 
-    <div>
-        <p>In the last few hours</p>
-        <h3>TRENDING UPDATE</h3>
-        <a href="terbaru.html">Lihat semua</a>
-        <div>
-            <div>
-                <a href="">
-                    <img src="asset/cover.jpg" alt="cover" >
-                    <br> Naruto <br>
-                    Episode 222
-                </a>
+            <div class="kanan">
+                    <li > <input type="text" placeholder="Cari"> </li>
+                    <li  ><a href="masuk.html">MASUK</a></li>
             </div>
-        </div>
-        <div>
+
+            </ul>
+        </nav>
+
+    <div class="kiri">
+        <div class="konten">
+            <p>In the last few hours</p>
+            <h3>TRENDING UPDATE</h3>
+            <a href="terbaru.html">Lihat semua</a>
+            <div class="cover">
+                <div>
+                    <a href="detail.html">
+                        <img src="asset/cover.jpg" alt="cover" >
+                        <br> Naruto <br>
+                        Episode 222
+                    </a>
+                </div>
+            </div>
+        <div class="cover">
             <div>
                 <a href="">
                     <img src="asset/opm.jpg" alt="cover" >
@@ -50,11 +52,11 @@
 
     </div>
 
-    <div>
+    <div class="konten">
         <h3>UPDATE TERBARU</h3>
         <a href="terbaru.html">Lihat semua</a>
         <div>
-            <div>
+            <div class="cover">
                 <a href="">
                     <img src="asset/bnh.jpg" alt="cover" sizes="20%" >
                     <div>
@@ -63,7 +65,7 @@
                     </div>
                 </a>
             </div>
-            <div>
+            <div class="cover">
                 <a href="">
                     <img src="asset/sololevel.jpg" alt="cover" sizes="20%" >
                     <div>
@@ -72,8 +74,8 @@
                     </div>
                 </a>
             </div>
-            <div>
-                <a href="detail.html">
+            <div class="cover">
+                <a href="">
                     <img src="asset/onp.jpg" alt="cover" sizes="20%" >
                     <div>
                         One Piece <br>
@@ -83,8 +85,9 @@
             </div>
         </div>
     </div>
+</div>
 
-    <div>
+    <div class="sidebar">
         <div><h3>Cari Menurut Genre</h3></div>
         <div>
             <ul>
@@ -101,13 +104,13 @@
         </div>
     </div>
 
-    <div>
+    <div class="sidebar">
         <h3>Paling Populer</h3>
         <a href="">Lihat semua</a>
         <div>
             <div>
                 <div>1.</div>
-                <a href="detail.html">
+                <a href="">
                     <img src="asset/kny.jpg" alt="cover" sizes="20%" >
                     <div>
                         Kimetsu no Yaiba <br>
@@ -117,7 +120,7 @@
             </div>
             <div>
                 <div>2.</div>
-                <a href="detail.html">
+                <a href="">
                     <img src="asset/drstone.jpg" alt="cover" sizes="20%" >
                     <div>
                         Solo Leveling <br>
@@ -130,7 +133,7 @@
 
     <div>
         <div>
-            <a href="tentangKami.html">Tentang Kami</a>
+            <a href="">Tentang Kami</a>
             <a href="">Ketentuan Layanan</a>
             <a href="">Dukungan Pelanggan</a>
         </div>
