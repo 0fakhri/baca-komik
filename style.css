@@ -12,37 +12,23 @@ ul {
     overflow: hidden;
     background-color: white;
 }
-  
+
 li {
-    float: left;
+  float: left;
 }
-  
+
 li a {
-    font-weight: bold;
-    display: block;
-    color: rgb(59, 59, 59);
-    text-align: center;
-    margin: 15px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.logo a img{
-    width: 50px;    
-    margin-top: -7px;
-}
-  
-
-li a:hover {
-    color : black;
+li a:hover:not(.active) {
+  background-color: #111;
 }
 
-/* .active {
-    border-bottom: 2px solid black
-} */
-
-.kol1{
-    float: left;
-    width: 25px;
+.active {
+  background-color: #4CAF50;
 }
-
-
