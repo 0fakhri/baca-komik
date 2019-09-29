@@ -28,10 +28,13 @@ nav ul {
     background-color: #fff;
     box-shadow: 0 4px 7px rgba(0,0,0,0.5);
   }
-  nav li input{
+nav li input{
       margin:25px 16px;
   }
-  nav li a {
+nav li button{
+      margin:25px 16px;
+  }
+nav li a {
     display: block;
     color: #595959;
     text-align: center;
@@ -40,12 +43,12 @@ nav ul {
     font-weight: bold;
   }
 
-  nav li a:hover:not(.active) {
+nav li a:hover:not(.active) {
     color: #000;
   }
 
+  color: #2196F3;
   .active {
-    color: #2196F3;
   }
 nav ul li a img.logo{
       float:left;
