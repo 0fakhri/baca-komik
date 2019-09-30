@@ -123,11 +123,28 @@ nav #find input{
     }
 
 /* content  */
+.konten{
+  margin-top: 80px;
+  padding: 20px
+}
 
 .main-kiri{
-  width: 70.5%;
+  width: 72.5%;
   border: 2px solid black;
   float: left;
+  padding: 10px;
+}
+
+.isi{
+  width: 100%;
+  background-color:#fff;
+  border: 2px solid blue;
+  padding: 10px;
+}
+
+.cover1{
+  width: 25%;
+Z */
 }
 
 .sidebar{
