@@ -4,9 +4,9 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
-
 body{
     background-image: url("asset/background.png");
+    min-height: 100%;
 }
 .kanan{
      float:right;
@@ -124,15 +124,16 @@ nav #find input{
 
 /* content  */
 .konten{
-  margin-top: 80px;
-  padding: 20px
+  margin: 80px 0 0 0;
+  padding: 20px;
+  min-height: 100%;
 }
 
 .main-kiri{
   width: 72.5%;
   border: 2px solid black;
-  float: left;
   padding: 10px;
+  float: left;
 }
 
 .isi{
@@ -144,7 +145,6 @@ nav #find input{
 
 .cover1{
   width: 25%;
-Z */
 }
 
 .sidebar{
@@ -153,23 +153,73 @@ Z */
   float: right;
 }
 
-/* sidebar  */
+  /* masuk dan daftar*/
 
+  form {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  form input, form button{
+    width: 320px;
+    height: 44px;
+    margin: 10px 0 0 0;
+    border-radius: 4px;
+  }
+  form button{
+    background-color: #2196F3;
+    box-shadow: 0 3px 6px #2095F2;
+    border: 0;
+    margin: 10px;
+  }
+  form button a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 20px;
+  }
+
+  @media screen and (max-width: 400px) {
+    form input, form button{
+      width: 90%;
+      height: 44px;
+      margin: 10px 0 0 0;
+      border-radius: 4px;
+    }
+      }
+
+
+
+/* sidebar  */
 
 
 /* footer  */
 footer{
+  background-color: rgba(255,255,255,0.8);
   width: 100%;
-  padding: 10px 0;
-  bottom: 0;
-  background-color: rgba(255,255,255,0.5);
   text-align: center;
+  left: 0;
+  bottom: 0;
+}
+.footer.masuk, .footer.daftar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255,255,255,0.8);
+  text-align: center;
+  padding: 20px 0;
 }
 
-footer div a{
+footer div a, .footer.masuk div a,.footer.daftar div a {
   text-decoration: none;
   margin: 20px;
   padding: 10px 0px;
   display: inline;
   color: #7F7F7F;
+}
+footer div p, .footer.masuk div p,.footer.daftar div p {
+  margin-top: 10px;
 }

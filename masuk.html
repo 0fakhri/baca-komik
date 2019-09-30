@@ -5,44 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BACA KOMIK</title>
 
 </head>
 <body>
-    <nav>
-        <ul>
-            <div class="kiri">
-                <li><a href="index.html" ><img class="logo" src="asset/BACA KOMIK ICON.png" alt=""></a></li>
-                <li><a href="index.html" class="active">BERANDA</a> </li>
-                <li><a href="semua.html">SEMUA KOMIK</a> </li>
-                <li><a href="terbaru.html">TERBARU</a></li>
+  <!-- navbar -->
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <div class="kiri">
+                    <li><a href="javascript:void(0);" class="icon" onclick="bar()"> <i class="fa fa-bars"></i></a>
+                    </li>
+                    <li><a href="index.html" ><img class="logo" src="asset/BACA KOMIK ICON.png" alt=""></a></li>
+                    <li><a class="respon"href="index.html" class="active">BERANDA</a> </li>
+                    <li><a class="respon"href="semua.html">SEMUA KOMIK</a> </li>
+                    <li><a class="respon" href="terbaru.html">TERBARU</a></li>
+                </div>
+            <div class="kanan">
+                    <li><a href="javascript:void(0);" class="icon" onclick="find()"> <i class="fa fa-search" aria-hidden="true"></i> </a>
+                    </li>
+                    <li> <input class="respon" type="text" placeholder="Cari"> </li>
+                    <div class="button"><a  href="masuk.html"> MASUK</a></div>
             </div>
+            <div class="clear"></div>
+            <div id="bar" style="display:none;"  class="bar">
+              <a class="respon"href="index.html" class="active">BERANDA</a>
+              <a class="respon"href="semua.html">SEMUA KOMIK</a>
+              <a class="respon" href="terbaru.html">TERBARU</a>
+            </div>
+            <div id="find" style="display:none;"  class="bar">
+              <input class="respon" type="text" placeholder="Cari">
+            </div>
+            </ul>
+        </nav>
 
-        <div class="kanan">
-                <li > <input type="text" placeholder="Cari"> </li>
-                <li  ><a href="masuk.html">MASUK</a></li>
-        </div>
-
-        </ul>
-    </nav>
-    <div>
+<!-- conten -->
+    <div class="konten masuk">
       <form action="">
-        <h1>Daftar</h1>
-        <input type="email" name="" id="" placeholder="Email">
-        <input type="password" name="" id="" placeholder="Kata sandi">
-        <button type="button" name="button"><a href="index.html">Masuk</a></button>
+        <h1>MASUK</h1>
+        <input type="email" name="" id="" placeholder="Email"><br>
+        <input type="password" name="" id="" placeholder="Kata sandi"><br>
+        <button type="button" name="button"><a href="index.html">Masuk</a></button> <br>
         <a href="daftar1.html"><u>Belum punya akun?</u></a>
       </form>
     </div>
-    <div>
+
+<!-- footer -->
+<div class="clear"></div>
+    <div class="footer masuk">
         <div>
-            <a href="tentangKami.html">Tentang Kami</a>
+            <a href="">Tentang Kami</a>
             <a href="">Ketentuan Layanan</a>
             <a href="">Dukungan Pelanggan</a>
         </div>
         <div>
-            © 2019
+            <p>© 2019</p>
         </div>
     </div>
+
+    <script>
+    var x = document.getElementById("bar");
+    var y = document.getElementById("find");
+    function bar() {
+       if (x.style.display === "none") {
+         x.style.display = "block";
+         y.style.display = "none";
+       } else {
+         x.style.display = "none";
+       }
+      }
+      function find() {
+         if (y.style.display === "none") {
+           y.style.display = "block";
+           x.style.display = "none";
+         } else {
+           y.style.display = "none";
+         }
+        }
+    </script>
 </body>
 </html>
