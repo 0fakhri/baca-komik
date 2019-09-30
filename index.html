@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BACA KOMIK</title>
 
 </head>
 <body>
-        <nav>
+        <nav class="topnav" id="myTopnav">
             <ul>
                 <div class="kiri">
+                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+                    </li>
                     <li><a href="index.html" ><img class="logo" src="asset/BACA KOMIK ICON.png" alt=""></a></li>
                     <li><a href="index.html" class="active">BERANDA</a> </li>
                     <li><a href="semua.html">SEMUA KOMIK</a> </li>
@@ -141,5 +144,17 @@
             © 2019
         </div>
     </div>
+
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 </body>
 </html>
