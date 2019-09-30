@@ -5,25 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BACA KOMIK</title>
+
 </head>
 <body>
-    <div class="menu">
-        <ul>
-            <li class="logo">
-                <a href="index.html">
-                    <img src="asset/BACA KOMIK ICON.png" alt="">
-                </a>
-            </li>
-            <li><a href="index.html">BERANDA</a> </li>
-            <li><a href="semua.html">SEMUA KOMIK</a> </li>
-            <li><a href="terbaru.html">TERBARU</a></li>
-            <!-- <form action="">
-                <input type="text" placeholder="Cari">
-            </form> -->
-            <li style="float: right"><a href="masuk.html">MASUK</a></li>
-        </ul>
-    </div>
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <div class="kiri">
+                    <li><a href="javascript:void(0);" class="icon" onclick="bar()"> <i class="fa fa-bars"></i></a>
+                    </li>
+                    <li><a href="index.html" ><img class="logo" src="asset/BACA KOMIK ICON.png" alt=""></a></li>
+                    <li><a class="respon"href="index.html" class="active">BERANDA</a> </li>
+                    <li><a class="respon"href="semua.html">SEMUA KOMIK</a> </li>
+                    <li><a class="respon" href="terbaru.html">TERBARU</a></li>
+                </div>
+            <div class="kanan">
+                    <li><a href="javascript:void(0);" class="icon" onclick="find()"> <i class="fa fa-search" aria-hidden="true"></i> </a>
+                    </li>
+                    <li> <input class="respon" type="text" placeholder="Cari"> </li>
+                    <div class="button"><a  href="masuk.html"> MASUK</a></div>
+            </div>
+            <div class="clear"></div>
+            <div id="bar" style="display:none;"  class="bar">
+              <a class="respon"href="index.html" class="active">BERANDA</a>
+              <a class="respon"href="semua.html">SEMUA KOMIK</a>
+              <a class="respon" href="terbaru.html">TERBARU</a>
+            </div>
+            <div id="find" style="display:none;"  class="bar">
+              <input class="respon" type="text" placeholder="Cari">
+            </div>
+            </ul>
+        </nav>
 
     <section> <!-- opo div enake  ? -->
         <div>
@@ -94,5 +108,39 @@
         </div>
 
     </section>
+ <!-- FOOTER -->
+ <div class="clear"></div>
+
+ <footer>
+     <div>
+         <a href="">Tentang Kami</a>
+         <a href="">Ketentuan Layanan</a>
+         <a href="">Dukungan Pelanggan</a>
+     </div>
+     <div>
+         © 2019
+     </div>
+ </footer>
+
+ <script>
+ var x = document.getElementById("bar");
+ var y = document.getElementById("find");
+ function bar() {
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+   }
+   function find() {
+      if (y.style.display === "none") {
+        y.style.display = "block";
+        x.style.display = "none";
+      } else {
+        y.style.display = "none";
+      }
+     }
+ </script>
 </body>
 </html>
