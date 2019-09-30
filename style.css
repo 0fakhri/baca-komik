@@ -246,6 +246,7 @@ footer div a, .footer.masuk div a,.footer.daftar div a {
 }
 footer div p, .footer.masuk div p,.footer.daftar div p {
   margin-top: 10px;
+    color: #7F7F7F;
 }
 @media screen and (max-width: 400px) {
   footer div a, .footer.masuk div a,.footer.daftar div a {
