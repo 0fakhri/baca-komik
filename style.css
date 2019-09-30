@@ -124,7 +124,7 @@ nav #find input{
 
 /* content  */
 .konten{
-  margin: 80px 20px 20px 20px;
+  margin: 100px 40px 40px 40px;
 }
 
 .main-kiri{
@@ -182,8 +182,8 @@ nav #find input{
   /* border: 2px solid palevioletred; */
 }
 
-/* masuk dan daftar*/
 
+/* masuk dan daftar*/
 form {
   margin: 0;
   padding: 20px;
@@ -226,6 +226,7 @@ footer{
   text-align: center;
   left: 0;
   bottom: 0;
+  margin-bottom: 0;
 }
 .footer.masuk, .footer.daftar{
   position: fixed;
