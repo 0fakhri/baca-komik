@@ -129,7 +129,7 @@ nav #find input{
 
 .main-kiri{
   width: 71.5%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   float: left;
   padding: 10px;
 }
@@ -137,8 +137,9 @@ nav #find input{
 .isi{
   width: 100%;
   background-color:#fff;
-  border: 2px solid blue;
-  margin-bottom: 10px;
+  /* border: 2px solid blue; */
+  margin-bottom: 40px;
+  /* height: 40%; */
 }
 
 .cover1{
@@ -151,16 +152,34 @@ nav #find input{
 
 }
 
-.sidebar{
-  width: 24.5%;
-  background-color: #fff;
-  border: 2px solid blue;
-  float: right;
-}
-
 /* sidebar  */
 
+.sidebar{
+  width: 24.5%;
+  /* border: 2px solid blue; */
+  float: right;
+  padding: 10px;
+}
 
+.kanan1{
+  background-color: #fff;
+  /* border: 2px solid black; */
+  margin-bottom: 40px;
+}
+.is li a {
+  margin: 5px;
+  color: #595959;
+  padding: 0px 0px;
+  text-align: left;
+  text-decoration: none;
+}
+.is li a:hover{
+  color: #2095F2;
+}
+
+.kanan2{
+  /* border: 2px solid palevioletred; */
+}
 
 /* footer  */
 footer{
