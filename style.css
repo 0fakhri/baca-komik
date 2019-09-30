@@ -125,12 +125,17 @@ nav #find input{
 
 /* content  */
 
+.main-kiri{
+  width: 70.5%;
+  border: 2px solid black;
+  float: left;
+}
 
-
-
-
-
-
+.sidebar{
+  width: 24.5%;
+  border: 2px solid blue;
+  float: right;
+}
 
 /* sidebar  */
 
