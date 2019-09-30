@@ -17,6 +17,9 @@ body{
 .active {
   color: #2196F3;
 }
+div.clear {
+    clear: both;
+  }
 
 /* navbar  */
 nav{
@@ -103,9 +106,6 @@ nav #find input{
 
 
 /* interaksi bar  */
-      div.clear {
-          clear: both;
-        }
         div.bar {
           text-align: center;
           transition: height 3s ease-out;
