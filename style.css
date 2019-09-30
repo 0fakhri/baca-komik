@@ -21,7 +21,7 @@ nav{
     width: 100%;
 }
 nav ul li {
-    float:left;
+    float: left;
 }
 nav ul {
     list-style-type: none;
@@ -32,13 +32,13 @@ nav ul {
     box-shadow: 0 4px 7px rgba(0,0,0,0.5);
   }
 nav li button, nav li input{
-      margin:25px 16px;
+      margin:25px 10px;
   }
 nav li a {
     display: block;
     color: #595959;
     text-align: center;
-    padding: 27px 16px;
+    padding: 27px 10px;
     text-decoration: none;
     font-weight: bold;
   }
@@ -53,15 +53,18 @@ nav ul li a img.logo{
       margin-top: -12.5px;
     }
 
-    @media screen and (max-width: 600px) {
-      .topnav a:not(:first-child) {display: none;}
+.icon{
+  display: none;x
+}
+@media screen and (max-width: 800px) {
+      .topnav li .respon{display: none;}
       .topnav a.icon {
-        float: le;
+        float: left;
         display: block;
       }
     }
 
-    @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
       .topnav.responsive {position: relative;}
       .topnav.responsive a {
         float: none;
