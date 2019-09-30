@@ -124,12 +124,11 @@ nav #find input{
 
 /* content  */
 .konten{
-  margin-top: 80px;
-  padding: 20px
+  margin: 80px 20px 20px 20px;
 }
 
 .main-kiri{
-  width: 72.5%;
+  width: 71.5%;
   border: 2px solid black;
   float: left;
   padding: 10px;
@@ -139,15 +138,22 @@ nav #find input{
   width: 100%;
   background-color:#fff;
   border: 2px solid blue;
-  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .cover1{
   width: 25%;
+  margin: 10px 10px 10px 0;
+  /* float:left; */
+}
+
+.cover2{
+
 }
 
 .sidebar{
   width: 24.5%;
+  background-color: #fff;
   border: 2px solid blue;
   float: right;
 }
