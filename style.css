@@ -1,7 +1,12 @@
 /* all  */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
 body{
-    margin: 0;
-    padding: 0;
+    background-image: url("asset/background.png");
 }
 .kanan{
      float:right;
@@ -20,6 +25,7 @@ nav{
     position: fixed;
     width: 100%;
     transition: 2s;
+    text-align: center;
 }
 nav ul li {
     float: left;
@@ -34,13 +40,13 @@ nav ul {
     box-shadow: 0 4px 7px rgba(0,0,0,0.5);
   }
 nav li button, nav li input{
-      margin:25px 10px;
+      margin:15px 10px;
   }
 nav li a {
     display: block;
     color: #595959;
-    text-align: center;
     padding: 27px 10px;
+    text-align: center;
     text-decoration: none;
     font-weight: bold;
   }
@@ -51,22 +57,45 @@ nav li a:hover:not(.active) {
 
 nav ul li a img.logo{
       float:left;
-      width: 55px;
-      margin-top: -12.5px;
+      width: 70px;
+      margin-top: -20px;
     }
+nav li button{
+  border: 0;
+  border-radius: 4px;
+  width: 76px;
+  height: 37px;
+  background-color: #2196F3;
+  box-shadow: 0 3px 6px #2095F2;
+  color: #fff;
+  font-weight: bold;
 
+}
+nav li input, nav #find input{
+  height: 33px;
+  width: 300px;
+  border-radius: 4px;
+}
+nav #find input{
+  margin-bottom: 10px;
+}
 
 
 .icon{
   display: none;
 }
-@media screen and (max-width: 760px) {
+
+@media screen and (max-width: 920px) {
       .topnav li .respon{display: none;}
       .topnav a.icon {
         float: left;
         display: block;
+        padding-right: 20px;
+        padding-left:  0;
       }
     }
+
+
 
 /* interaksi bar  */
       div.clear {
@@ -83,6 +112,11 @@ nav ul li a img.logo{
           text-decoration: none;
           font-weight: bold;
         }
+@media screen and (min-width: 920px){
+        div#find input, div#bar a{
+              display: none;
+        }
+    }
 
 /* content  */
 
