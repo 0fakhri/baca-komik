@@ -17,6 +17,9 @@ body{
 .active {
   color: #2196F3;
 }
+div.clear {
+    clear: both;
+  }
 
 /* navbar  */
 nav{
@@ -39,7 +42,7 @@ nav ul {
     background-color: #fff;
     box-shadow: 0 4px 7px rgba(0,0,0,0.5);
   }
-nav li button, nav li input{
+nav li input{
       margin:15px 10px;
   }
 nav li a {
@@ -60,15 +63,20 @@ nav ul li a img.logo{
       width: 70px;
       margin-top: -20px;
     }
-nav li button{
-  border: 0;
+nav div.button a{
+  text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+nav div.button{
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;;
+  padding: 10px;;
   border-radius: 4px;
-  width: 76px;
-  height: 37px;
   background-color: #2196F3;
   box-shadow: 0 3px 6px #2095F2;
-  color: #fff;
-  font-weight: bold;
+
 
 }
 nav li input, nav #find input{
@@ -90,17 +98,14 @@ nav #find input{
       .topnav a.icon {
         float: left;
         display: block;
-        padding-right: 20px;
-        padding-left:  0;
+        padding-right: 30px;
+        padding-left:  0px;
       }
     }
 
 
 
 /* interaksi bar  */
-      div.clear {
-          clear: both;
-        }
         div.bar {
           text-align: center;
           transition: height 3s ease-out;
