@@ -27,7 +27,6 @@ nav{
     top: 0;
     position: fixed;
     width: 100%;
-    transition: 2s;
     text-align: center;
 }
 nav ul li {
@@ -139,4 +138,21 @@ nav #find input{
 
 /* sidebar  */
 
-/* header  */
+
+
+/* footer  */
+footer{
+  width: 100%;
+  padding: 10px 0;
+  bottom: 0;
+  background-color: rgba(255,255,255,0.5);
+  text-align: center;
+}
+
+footer div a{
+  text-decoration: none;
+  margin: 20px;
+  padding: 10px 0px;
+  display: inline;
+  color: #7F7F7F;
+}
