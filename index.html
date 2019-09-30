@@ -26,8 +26,16 @@
                     <li> <input class="respon" type="text" placeholder="Cari"> </li>
                     <li  ><button href="masuk.html">MASUK</a></button>
             </div>
+            <div class="clear"></div>
+            <div id="bar" style="display:none;" class="bar">
+              <a class="respon"href="index.html" class="active">BERANDA</a>
+              <a class="respon"href="semua.html">SEMUA KOMIK</a>
+              <a class="respon" href="terbaru.html">TERBARU</a>
+            </div>
             </ul>
+
         </nav>
+
 
     <div class="kiri">
         <div class="konten">
@@ -145,16 +153,15 @@
         </div>
     </div>
 
-
     <script>
     function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+       var x = document.getElementById("bar");
+       if (x.style.display === "none") {
+         x.style.display = "block";
+       } else {
+         x.style.display = "none";
+       }
       }
-    }
     </script>
 </body>
 </html>
