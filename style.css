@@ -124,14 +124,13 @@ nav #find input{
 
 /* content  */
 .konten{
-  margin: 80px 0 0 0;
-  padding: 20px;
-  min-height: 100%;
+  margin: 80px 20px 20px 20px;
 }
 
 .main-kiri{
-  width: 72.5%;
-  border: 2px solid black;
+  width: 71.5%;
+  /* border: 2px solid black; */
+  float: left;
   padding: 10px;
   float: left;
 }
@@ -139,61 +138,86 @@ nav #find input{
 .isi{
   width: 100%;
   background-color:#fff;
-  border: 2px solid blue;
-  padding: 10px;
+  /* border: 2px solid blue; */
+  margin-bottom: 40px;
+  /* height: 40%; */
 }
 
 .cover1{
   width: 25%;
+  margin: 10px 10px 10px 0;
+  /* float:left; */
 }
+
+.cover2{
+
+}
+
+/* sidebar  */
 
 .sidebar{
   width: 24.5%;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   float: right;
+  padding: 10px;
 }
 
-  /* masuk dan daftar*/
+.kanan1{
+  background-color: #fff;
+  /* border: 2px solid black; */
+  margin-bottom: 40px;
+}
+.is li a {
+  margin: 5px;
+  color: #595959;
+  padding: 0px 0px;
+  text-align: left;
+  text-decoration: none;
+}
+.is li a:hover{
+  color: #2095F2;
+}
 
-  form {
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
-  }
+.kanan2{
+  /* border: 2px solid palevioletred; */
+}
+
+/* masuk dan daftar*/
+
+form {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+form input, form button{
+  width: 320px;
+  height: 44px;
+  margin: 10px 0 0 0;
+  border-radius: 4px;
+}
+form button{
+  background-color: #2196F3;
+  box-shadow: 0 3px 6px #2095F2;
+  border: 0;
+  margin: 10px;
+}
+form button a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 400px) {
   form input, form button{
-    width: 320px;
+    width: 90%;
     height: 44px;
     margin: 10px 0 0 0;
     border-radius: 4px;
   }
-  form button{
-    background-color: #2196F3;
-    box-shadow: 0 3px 6px #2095F2;
-    border: 0;
-    margin: 10px;
-  }
-  form button a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    margin: 20px;
-  }
-
-  @media screen and (max-width: 400px) {
-    form input, form button{
-      width: 90%;
-      height: 44px;
-      margin: 10px 0 0 0;
-      border-radius: 4px;
     }
-      }
-
-
-
-/* sidebar  */
-
 
 /* footer  */
 footer{
