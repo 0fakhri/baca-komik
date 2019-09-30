@@ -19,6 +19,7 @@ nav{
     top: 0;
     position: fixed;
     width: 100%;
+    transition: 2s;
 }
 nav ul li {
     float: left;
@@ -73,6 +74,7 @@ nav ul li a img.logo{
         }
         div.bar {
           text-align: center;
+          transition: height 3s ease-out;
         }
         div.bar a{
           padding:4px 0;
@@ -81,7 +83,6 @@ nav ul li a img.logo{
           text-decoration: none;
           font-weight: bold;
         }
-
 
 /* content  */
 

@@ -13,7 +13,7 @@
         <nav class="topnav" id="myTopnav">
             <ul>
                 <div class="kiri">
-                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+                    <li><a href="javascript:void(0);" class="icon" onclick="bar()"> <i class="fa fa-bars"></i></a>
                     </li>
                     <li><a href="index.html" ><img class="logo" src="asset/BACA KOMIK ICON.png" alt=""></a></li>
                     <li><a class="respon"href="index.html" class="active">BERANDA</a> </li>
@@ -21,19 +21,21 @@
                     <li><a class="respon" href="terbaru.html">TERBARU</a></li>
                 </div>
             <div class="kanan">
-                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-search" aria-hidden="true"></i> </a>
+                    <li><a href="javascript:void(0);" class="icon" onclick="find()"> <i class="fa fa-search" aria-hidden="true"></i> </a>
                     </li>
                     <li> <input class="respon" type="text" placeholder="Cari"> </li>
                     <li  ><button href="masuk.html">MASUK</a></button>
             </div>
             <div class="clear"></div>
-            <div id="bar" style="display:none;" class="bar">
+            <div id="bar" style="display:none;"  class="bar">
               <a class="respon"href="index.html" class="active">BERANDA</a>
               <a class="respon"href="semua.html">SEMUA KOMIK</a>
               <a class="respon" href="terbaru.html">TERBARU</a>
             </div>
+            <div id="find" style="display:none;"  class="bar">
+              <input class="respon" type="text" placeholder="Cari">
+            </div>
             </ul>
-
         </nav>
 
 
@@ -154,14 +156,24 @@
     </div>
 
     <script>
-    function myFunction() {
-       var x = document.getElementById("bar");
+    var x = document.getElementById("bar");
+    var y = document.getElementById("find");
+    function bar() {
        if (x.style.display === "none") {
          x.style.display = "block";
+         y.style.display = "none";
        } else {
          x.style.display = "none";
        }
       }
+      function find() {
+         if (y.style.display === "none") {
+           y.style.display = "block";
+           x.style.display = "none";
+         } else {
+           y.style.display = "none";
+         }
+        }
     </script>
 </body>
 </html>
