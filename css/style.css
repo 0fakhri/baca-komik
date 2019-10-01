@@ -132,8 +132,6 @@ footer{
   background-color: rgba(255,255,255,0.8);
   width: 100%;
   text-align: center;
-  left: 0;
-  bottom: 0;
   margin:0;
   padding: 10px 0 ;
   box-shadow: 0 -4px 7px rgba(0,0,0,0.5)
@@ -141,7 +139,6 @@ footer{
 .footer.masuk, .footer.daftar{
   position: static;
   left: 0;
-  bottom: 0;
   width: 100%;
   background-color: rgba(255,255,255,0.8);
   text-align: center;
@@ -150,10 +147,11 @@ footer{
 
 @media screen and (min-width: 400px) {
   footer{
-    position: absolute;
+    position: static;
   }
   .footer.masuk, .footer.daftar{
     position: absolute;
+    bottom: 0;
   }
   footer div a, .footer.masuk div a,.footer.daftar div a{
     text-decoration: none;
@@ -185,7 +183,10 @@ footer{
       margin: 0;
       padding: 0;
   }
-  .footer.masuk, .footer.daftar, .footer.tentangKami{
+  .footer.masuk, .footer.daftar{
+    margin-bottom: 0;
     padding: 5px 0;
+    bottom: 0;
+    position: static;
   }
 }
