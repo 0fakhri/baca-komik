@@ -121,105 +121,10 @@ nav #find input{
     }
 
 /* content  */
-.konten{
-  margin: 100px 40px 40px 40px;
-  /* border: 2px solid gold; */
-}
-
-.atas{
-
-}
-
-.atas-kiri{
-  display: inline-block;
-  text-align: left;
-}
-
-.atas-kanan{
-  display: inline-block;
-  float: right;
-}
-
-.main-kiri{
-  width: 71.5%;
-  /* border: 2px solid black; */
-  float: left;
-  margin: 0;
-  padding: 0px;
-  float: left;
-}
-
-.isi{
-  box-sizing: border-box;
-  padding: 20px;
-  width: 100%;
-  background-color:#fff;
-  /* border: 2px solid blue; */
-  margin-bottom: 40px;
-  /* height: 40%; */
-}
-
-
-.cover1{
-  width: 25%;
-  margin: 10px 10px 10px 0;
-  display: inline-block;
-}
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-  height: 300px;
-}
-.row {
-  padding: auto 0;
-  height: 100%;
-  margin: 0;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-
-.card a img{
-  width: 100%;
-}
-
-/* sidebar  */
-
-.sidebar{
-  width: 24.5%;
-  /* border: 2px solid blue; */
-  float: right;
-
-}
-
-.kanan1{
-  background-color: #fff;
-  /* border: 2px solid black; */
-  margin-bottom: 40px;
-}
-.is li a {
-  margin: 5px;
-  color: #595959;
-  padding: 0px 0px;
-  text-align: left;
-  text-decoration: none;
-}
-.is li a:hover{
-  color: #2095F2;
-}
-
-
-
+    .konten{
+      margin: 100px 40px 40px 40px;
+      /* border: 2px solid gold; */
+    }
 
 /* footer  */
 footer{
@@ -230,6 +135,7 @@ footer{
   bottom: 0;
   margin-bottom: 0;
   padding: 20px 0;
+  box-shadow: 0 -4px 7px rgba(0,0,0,0.5)
 }
 .footer.masuk, .footer.daftar{
   position: fixed;
@@ -238,7 +144,7 @@ footer{
   width: 100%;
   background-color: rgba(255,255,255,0.8);
   text-align: center;
-
+  padding: 20px 0;
 }
 
 footer div a, .footer.masuk div a,.footer.daftar div a {
