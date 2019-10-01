@@ -128,7 +128,7 @@ nav #find input{
 
 /* footer  */
 footer{
-  position: absolute;
+  position: static;
   background-color: rgba(255,255,255,0.8);
   width: 100%;
   text-align: center;
@@ -139,7 +139,7 @@ footer{
   box-shadow: 0 -4px 7px rgba(0,0,0,0.5)
 }
 .footer.masuk, .footer.daftar{
-  position: fixed;
+  position: static;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -149,6 +149,12 @@ footer{
 }
 
 @media screen and (min-width: 400px) {
+  footer{
+    position: absolute;
+  }
+  .footer.masuk, .footer.daftar{
+    position: absolute;
+  }
   footer div a, .footer.masuk div a,.footer.daftar div a{
     text-decoration: none;
     margin: 10px;
