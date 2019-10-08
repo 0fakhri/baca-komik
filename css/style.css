@@ -190,3 +190,12 @@ footer{
     position: static;
   }
 }
+
+@media screen and (min-heigth: 400px) {
+  footer{
+    display: none;
+  }
+  .footer.masuk, .footer.daftar{
+    display: none;
+  }
+}
