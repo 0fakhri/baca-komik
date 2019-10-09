@@ -192,7 +192,7 @@ footer{
   }
 }
 
-@media screen and (min-heigth: 400px) {
+@media screen and (min-heigth: 300px) {
   footer{
     display: none;
   }
