@@ -19,6 +19,16 @@
   float: right;
 }
 
+.atas-kanan a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #595959;
+}
+
+.atas-kanan a:hover{
+  color: #2095F2;
+}
+
 .main-kiri{
   width: 71.5%;
   /* border: 2px solid black; */
