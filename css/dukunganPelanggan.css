@@ -1,0 +1,11 @@
+.konten{
+  background-color: #fff;
+  padding: 40px;
+}
+.konten h1{
+  text-align: center;
+}
+.konten p{
+  margin: 10px 0;
+  text-align: justify;
+}
