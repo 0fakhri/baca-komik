@@ -7,7 +7,6 @@
 }
 body{
     background-image: url("../img/background.png");
-    min-height: 100vh;
 }
 .konten{
   margin : 100px 0 0 0;
@@ -67,12 +66,12 @@ nav ul li a img.logo{
       width: 70px;
       margin-top: -20px;
     }
-nav div.button a{
+nav .kanan >  a{
   text-decoration: none;
     color: #fff;
     font-weight: bold;
 }
-nav div.button{
+nav .kanan >  a{
   display: inline-block;
   text-align: center;
   margin-top: 15px;;
