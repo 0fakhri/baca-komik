@@ -57,17 +57,16 @@
     </div>
 
 <!-- footer -->
-    <div class="clear"></div>
-        <div class="footer masuk">
-            <div>
-              <a href="tentangKami.html">Tentang Kami</a>
-              <a href="ketentuanLayanan.html">Ketentuan Layanan</a>
-              <a href="dukunganPelanggan.html">Dukungan Pelanggan</a>
-            </div>
-            <div>
-                <p>© 2019</p>
-            </div>
+    <footer>
+        <div>
+            <a href="tentangKami.html">Tentang Kami</a>
+            <a href="ketentuanLayanan.html">Ketentuan Layanan</a>
+            <a href="dukunganPelanggan.html">Dukungan Pelanggan</a>
         </div>
+        <div>
+            <p>© 2019</p>
+        </div>
+    </footer>
 
         <script>
         var x = document.getElementById("bar");
@@ -131,6 +130,11 @@
             }
           }else{
               document.getElementById("samain").style.display = "block";
+              document.getElementById("panjangPendek").style.display = "none";
+              ocument.getElementById("kAngka").style.display = "none";
+              document.getElementById("kBesar").style.display = "none";
+              document.getElementById("kKecil").style.display = "none";
+
           }
 
           if (isPanjang == true || isPendek == true){
