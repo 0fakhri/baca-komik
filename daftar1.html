@@ -45,8 +45,8 @@
     <div class="konten">
       <form action="">
         <h1>DAFTAR</h1> <br>
-        <input type="email" placeholder="Masukkan email anda..." id="username"><br>
-        <p style="display:none;color:red;" id="panjangPendek">*username panjangnya harus 2 sampai 12 karakter</p>
+        <input type="email" placeholder="Masukkan email anda..." id="mymail"><br>
+        <p style="display:none;color:red;" id="email">*masukan email</p>
         <button type="button" name="button" onclick="validasi();">Lanjutkan</button>
       </form>
     </div>
@@ -63,27 +63,26 @@
         </div>
     </footer>
 
-            <script>
+    <script>
             var x = document.getElementById("bar");
             var y = document.getElementById("find");
-
             function validasi(){
-              var cek = document.getElementById("username");
-              var isPendek = false;
-              var isPanjang = false;
-                if (cek.value.length>12){
-                  isPendek = true;
-                  cek.value = "";
-                }else if(cek.value.length<2){
-                  isPendek = true;
-                }
-              if (isPanjang == true || isPendek == true){
-                document.getElementById("panjangPendek").style.display = "block";
+              var cek = document.getElementById("mymail");
+              var isEmail = false;
+              for (var i = 0; i < cek.value.length; i++){
+                  var ch = cek.value.charAt(i);
+                  if(ch == "@"){
+                    isEmail = true;
+                    break;
+                    }
+                 }
+              if (isEmail == false){
+                document.getElementById("email").style.display = "block";
               } else{
-                document.getElementById("panjangPendek").style.display = "none";
+                document.getElementById("email").style.display = "none";
               }
               //lanjut ke halaman selanjutnya
-              if(isPanjang == false && isPendek == false){
+              if(isEmail==true){
                 window.location.href = "daftar2.html";
               }
             }
