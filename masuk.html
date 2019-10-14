@@ -44,9 +44,12 @@
     <div class="konten masuk">
       <form action="">
         <h1>MASUK</h1>
-        <input type="email" name="" id="" placeholder="Email"><br>
-        <input type="password" name="" id="" placeholder="Kata sandi"><br>
-        <button type="button" name="button" onclick="link();">Masuk</button> <br>
+        <input type="email" name="" id="myemail" placeholder="Email"><br>
+        <p style="display:none;color:red;" id="email">*email tidak boleh kosong</p>
+        <p style="display:none;color:red;" id="email1">*email salah</p>
+        <input type="password" name="" id="mypass" placeholder="Kata sandi"><br>
+        <p style="display:none;color:red;" id="pass">*password tidak boleh kosong</p>
+                <button type="button" name="button" onclick="validasi();">Masuk</button> <br>
         <a href="daftar1.html"><u>Belum punya akun?</u></a>
       </form>
     </div>
@@ -66,9 +69,45 @@
     <script>
     var x = document.getElementById("bar");
     var y = document.getElementById("find");
-    function link(){
-      window.location.href = "index.html";
+    function validasi(){
+      var isMail = false;
+      var isPass = false;
+      var mail = document.getElementById("myemail");
+      var pass = document.getElementById("mypass");
+      var cek = mail;
+      var isEmail = false;
+            if (mail.value.length>0){
+          document.getElementById("email").style.display = "none";
+          isMail = true;
+          for (var i = 0; i < cek.value.length; i++){
+                var ch = cek.value.charAt(i);
+                if(ch == "@"){
+                  isEmail = true;
+                  break;
+                  }
+               }
+            if (isEmail == false){
+              document.getElementById("email1").style.display = "block";
+            } else{
+              document.getElementById("email1").style.display = "none";
+            }
+        }else{
+          document.getElementById("email").style.display = "block";
+          document.getElementById("email1").style.display = "none";
+        }
+        if (pass.value.length>0){
+            document.getElementById("pass").style.display = "none";
+            isPass = true;
+          }else{
+            document.getElementById("pass").style.display = "block";
+          }
+
+      //lanjut ke halaman selanjutnya
+      if(isMail == true && isPass == true && isEmail==true){
+        window.location.href = "index.html";
+      }
     }
+
     function bar() {
        if (x.style.display === "none") {
          x.style.display = "block";
