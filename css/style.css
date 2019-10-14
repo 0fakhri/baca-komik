@@ -130,67 +130,44 @@ footer{
   margin:0;
   padding: 10px 0 ;
   box-shadow: 0 -4px 7px rgba(0,0,0,0.5)
-}
-.footer.masuk, .footer.daftar{
-  position: static;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255,255,255,0.8);
-  text-align: center;
-  box-shadow: 0 -4px 7px rgba(0,0,0,0.5)
-}
 
+}
 @media screen and (min-width: 400px) {
   footer{
     position: static;
   }
-  .footer.masuk, .footer.daftar{
-    position: absolute;
-    bottom: 0;
-  }
-  footer div a, .footer.masuk div a,.footer.daftar div a{
+
+  footer div a{
     text-decoration: none;
     margin: 10px;
     padding: 10px 0px;
     display: inline;
     color: #7F7F7F;
   }
-  footer div p, .footer.masuk div p,.footer.daftar div p{
+  footer div p{
     text-align: center;
       color: #7F7F7F;
       margin: 10px;
   }
-  .footer.masuk, .footer.daftar, .footer.tentangKami{
-    padding: 10px 0;
-  }
 }
 @media screen and (max-width: 400px) {
-  footer div a, .footer.masuk div a,.footer.daftar div a {
+  footer div a {
     text-decoration: none;
     margin: 0px;
     padding: 0;
     display: block;
     color: #7F7F7F;
   }
-  footer div p, .footer.masuk div p,.footer.daftar div p{
+  footer div p{
     text-align: center;
       color: #7F7F7F;
       margin: 0;
       padding: 0;
   }
-  .footer.masuk, .footer.daftar{
-    margin-bottom: 0;
-    padding: 5px 0;
-    bottom: 0;
-    position: static;
-  }
 }
 
 @media screen and (min-heigth: 300px) {
   footer{
-    display: none;
-  }
-  .footer.masuk, .footer.daftar{
     display: none;
   }
 }

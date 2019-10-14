@@ -1,7 +1,8 @@
 
 /* masuk dan daftar*/
 form {
-  margin: 0;
+    min-height: 500px;
+  margin: 100px 0 15px 0;
   padding: 20px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
@@ -18,12 +19,15 @@ form button{
   border: 0;
   margin: 10px;
 }
-form button a{
+form button{
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
   margin: 20px;
+}
+form button:hover{
+  cursor:pointer;
 }
 
 @media screen and (max-width: 400px) {

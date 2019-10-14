@@ -45,27 +45,48 @@
     <div class="konten">
       <form action="">
         <h1>DAFTAR</h1> <br>
-        <input type="email" placeholder="Masukkan email anda..."><br>
-        <button type="button" name="button"><a href="daftar2.html">Lanjutkan</a></button>
+        <input type="email" placeholder="Masukkan email anda..." id="username"><br>
+        <p style="display:none;color:red;" id="panjangPendek">*username panjangnya harus 2 sampai 12 karakter</p>
+        <button type="button" name="button" onclick="validasi();">Lanjutkan</button>
       </form>
     </div>
 
     <!-- footer -->
-        <div class="clear"></div>
-            <div class="footer daftar">
-                <div>
-                  <a href="tentangKami.html">Tentang Kami</a>
-                  <a href="ketentuanLayanan.html">Ketentuan Layanan</a>
-                  <a href="dukunganPelanggan.html">Dukungan Pelanggan</a>
-                </div>
-                <div>
-                    <p>© 2019</p>
-                </div>
-            </div>
+    <footer>
+        <div>
+            <a href="tentangKami.html">Tentang Kami</a>
+            <a href="ketentuanLayanan.html">Ketentuan Layanan</a>
+            <a href="dukunganPelanggan.html">Dukungan Pelanggan</a>
+        </div>
+        <div>
+            <p>© 2019</p>
+        </div>
+    </footer>
 
             <script>
             var x = document.getElementById("bar");
             var y = document.getElementById("find");
+
+            function validasi(){
+              var cek = document.getElementById("username");
+              var isPendek = false;
+              var isPanjang = false;
+                if (cek.value.length>12){
+                  isPendek = true;
+                  cek.value = "";
+                }else if(cek.value.length<2){
+                  isPendek = true;
+                }
+              if (isPanjang == true || isPendek == true){
+                document.getElementById("panjangPendek").style.display = "block";
+              } else{
+                document.getElementById("panjangPendek").style.display = "none";
+              }
+              //lanjut ke halaman selanjutnya
+              if(isPanjang == false && isPendek == false){
+                window.location.href = "daftar2.html";
+              }
+            }
             function bar() {
                if (x.style.display === "none") {
                  x.style.display = "block";

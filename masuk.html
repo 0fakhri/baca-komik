@@ -46,27 +46,29 @@
         <h1>MASUK</h1>
         <input type="email" name="" id="" placeholder="Email"><br>
         <input type="password" name="" id="" placeholder="Kata sandi"><br>
-        <button type="button" name="button"><a href="index.html">Masuk</a></button> <br>
+        <button type="button" name="button" onclick="link();">Masuk</button> <br>
         <a href="daftar1.html"><u>Belum punya akun?</u></a>
       </form>
     </div>
 
 <!-- footer -->
-<div class="clear"></div>
-    <div class="footer masuk">
-        <div>
-          <a href="tentangKami.html">Tentang Kami</a>
-          <a href="ketentuanLayanan.html">Ketentuan Layanan</a>
-          <a href="dukunganPelanggan.html">Dukungan Pelanggan</a>
-        </div>
-        <div>
-            <p>© 2019</p>
-        </div>
+<footer>
+    <div>
+        <a href="tentangKami.html">Tentang Kami</a>
+        <a href="ketentuanLayanan.html">Ketentuan Layanan</a>
+        <a href="dukunganPelanggan.html">Dukungan Pelanggan</a>
     </div>
+    <div>
+        <p>© 2019</p>
+    </div>
+</footer>
 
     <script>
     var x = document.getElementById("bar");
     var y = document.getElementById("find");
+    function link(){
+      window.location.href = "index.html";
+    }
     function bar() {
        if (x.style.display === "none") {
          x.style.display = "block";
