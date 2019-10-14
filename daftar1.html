@@ -45,8 +45,9 @@
     <div class="konten">
       <form action="">
         <h1>DAFTAR</h1> <br>
-        <input type="email" placeholder="Masukkan email anda..."><br>
-        <button type="button" name="button" onclick="link()">Lanjutkan</button>
+        <input type="email" placeholder="Masukkan email anda..." id="username"><br>
+        <p style="display:none;color:red;" id="panjangPendek">*username panjangnya harus 2 sampai 12 karakter</p>
+        <button type="button" name="button" onclick="validasi();">Lanjutkan</button>
       </form>
     </div>
 
@@ -67,8 +68,25 @@
             var x = document.getElementById("bar");
             var y = document.getElementById("find");
 
-            function link(){
-              window.location.href = "daftar2.html";
+            function validasi(){
+              var cek = document.getElementById("username");
+              var isPendek = false;
+              var isPanjang = false;
+                if (cek.value.length>12){
+                  isPendek = true;
+                  cek.value = "";
+                }else if(cek.value.length<2){
+                  isPendek = true;
+                }
+              if (isPanjang == true || isPendek == true){
+                document.getElementById("panjangPendek").style.display = "block";
+              } else{
+                document.getElementById("panjangPendek").style.display = "none";
+              }
+              //lanjut ke halaman selanjutnya
+              if(isPanjang == false && isPendek == false){
+                window.location.href = "daftar2.html";
+              }
             }
             function bar() {
                if (x.style.display === "none") {
