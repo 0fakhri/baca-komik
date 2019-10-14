@@ -74,11 +74,52 @@
             alert("terlalu panjang"+cek.value);
             cek.value = "";
           }else if(cek.value.length<5){
-            alert("terlalu pendek "+cek.value);
+            alert("terlalu pendek \n"+cek.value);
           }else{
             alert(cek.value);
-            window.location.href = "masuk.html";
+              for (var i = 0; i < cek.value.length; i++){
+              var ch = cek.value.charAt(i);
+              if(ch >= "a" && ch <= "z"){
+                alert("password memuat karakter huruf kecil");
+                break;
+                }
+             }
+             for (var i = 0; i < cek.value.length; i++){
+             var ch = cek.value.charAt(i);
+             if(ch >= "A" && ch <= "Z"){
+               alert("password memuat karakter huruf besar");
+               break;
+               }
+            }
+            for (var i = 0; i < cek.value.length; i++){
+            var ch = cek.value.charAt(i);
+            if(ch >= "0" && ch <= "9"){
+              alert("password memuat karakter huruf angka");
+              break;
+              }
+           }
+
+            // window.location.href = "masuk.html";
           }
+
+
+          // for (var i = 0; i < cek.length; i ++){
+          //   var ch = form.pass.value.charAt(i);
+          //   if((ch < "a" || ch > "z")){
+          //     alert("password memuat karakter huruf kecil");
+          //     break;
+          //     }
+          // }
+          // for (var i = 0; i < cek.length; i ++){
+          //   var ch = form.pass.value.charAt(i);
+          //   if((ch < "0" || ch > "9")){
+          //     alert("password memuat karakter angka");
+          //     break;
+          //     }
+          // }
+
+
+
 
         }
 
