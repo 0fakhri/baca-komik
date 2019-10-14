@@ -47,6 +47,10 @@
         <h1>DAFTAR</h1><br>
         <input type="password" name="" placeholder="Masukkan kata sandi"  id="pass"><br>
         <input type="password" name="" id="" placeholder="Konfirmasi kata sandi"><br>
+        <p style="display:none;color:red;" id="panjangPendek">password panjangnya harus 5 sampai 12 karakter</p>
+        <p style="display:none;color:red;" id="kKecil">password harus memuat setidaknya 1 karakter huruf kecil</p>
+        <P style="display:none; color:red;" id="kBesar">password harus memuat setidaknya 1 karakter huruf besar</P>
+        <p style="display:none;color:red;" id="kAngka">password harus memuat setidaknya 1 karakter angka</p>
         <button type="button" name="button" onclick="coba();">Daftar</button>
       </form>
     </div>
@@ -69,60 +73,70 @@
         var y = document.getElementById("find");
 // validasi
         function coba(){
+          var iskAngka = false;
+          var iskBesar = false;
+          var iskKecil = false;
+          var isPendek = false;
+          var isPanjang = false;
           var cek = document.getElementById("pass");
-          if (cek.value.length>8){
-            alert("terlalu panjang"+cek.value);
+          if (cek.value.length>12){
+            isPendek = true;
             cek.value = "";
           }else if(cek.value.length<5){
-            alert("terlalu pendek \n"+cek.value);
+            isPendek = true;
           }else{
             alert(cek.value);
-              for (var i = 0; i < cek.value.length; i++){
+
+            //cek ada tidaknya angka huruf kecil besar
+            for (var i = 0; i < cek.value.length; i++){
               var ch = cek.value.charAt(i);
               if(ch >= "a" && ch <= "z"){
-                alert("password memuat karakter huruf kecil");
+                iskKecil = true;
                 break;
                 }
              }
              for (var i = 0; i < cek.value.length; i++){
              var ch = cek.value.charAt(i);
              if(ch >= "A" && ch <= "Z"){
-               alert("password memuat karakter huruf besar");
+               iskBesar = true;
                break;
                }
             }
             for (var i = 0; i < cek.value.length; i++){
             var ch = cek.value.charAt(i);
             if(ch >= "0" && ch <= "9"){
-              alert("password memuat karakter huruf angka");
+              iskAngka = true;
               break;
               }
            }
+           //cek ketika ada dangka huruf kecil dan besar kalau ada jadikan display block atau terlihat
+           if (iskKecil == false){
+             document.getElementById("kKecil").style.display = "block";
+           } else{
+             document.getElementById("kKecil").style.display = "none";
+           }
+           if (iskBesar == false){
+             document.getElementById("kBesar").style.display = "block";
+           } else{
+             document.getElementById("kBesar").style.display = "none";
+           }
+           if (iskAngka == false){
+             document.getElementById("kAngka").style.display = "block";
+           } else{
+             document.getElementById("kAngka").style.display = "none";
+           }
+
+          }
+          if (isPanjang == true || isPendek == true){
+            document.getElementById("panjangPendek").style.display = "block";
+          } else{
+            document.getElementById("panjangPendek").style.display = "none";
+          }
+          //lanjut ke halaman selanjutnya
+          if(isPanjang == false && isPendek == false && iskKecil == true && iskBesar==true && iskAngka==true){
             window.location.href = "masuk.html";
           }
-
-
-          // for (var i = 0; i < cek.length; i ++){
-          //   var ch = form.pass.value.charAt(i);
-          //   if((ch < "a" || ch > "z")){
-          //     alert("password memuat karakter huruf kecil");
-          //     break;
-          //     }
-          // }
-          // for (var i = 0; i < cek.length; i ++){
-          //   var ch = form.pass.value.charAt(i);
-          //   if((ch < "0" || ch > "9")){
-          //     alert("password memuat karakter angka");
-          //     break;
-          //     }
-          // }
-
-
-
-
         }
-
-        alert(cek);
         function bar() {
            if (x.style.display === "none") {
              x.style.display = "block";
