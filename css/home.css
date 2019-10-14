@@ -137,18 +137,20 @@
 
 .btn-banyak a{
   text-decoration: none;
-  color: white;
+  font-weight: bold;
+  color: #2095F2;
 }
 
 .btn-banyak{
   width: 100%;
-  background-color: #c5c5c5;
   text-align: center;
 }
 
 .btn-banyak:hover{
-  background-color: #2095F2;
   cursor: pointer;
+}
+.btn-banyak i{
+  color: #2095F2;
 }
 
 
