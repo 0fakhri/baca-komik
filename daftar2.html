@@ -49,9 +49,9 @@
         <input type="password" name="" id="pass2" placeholder="Konfirmasi kata sandi"><br>
         <p style="display:none;color:red;" id="samain">*konfirmasi password tidak sama</p>
         <p style="display:none;color:red;" id="panjangPendek">*password panjangnya harus 5 sampai 12 karakter</p>
-        <p style="display:none;color:red;" id="kKecil">*password harus memuat setidaknya 1 karakter huruf kecil</p>
-        <P style="display:none; color:red;" id="kBesar">*password harus memuat setidaknya 1 karakter huruf besar</P>
-        <p style="display:none;color:red;" id="kAngka">*password harus memuat setidaknya 1 karakter angka</p>
+        <p style="display:none;color:red;" id="kKecil">*password harus memiliki 1 karakter huruf kecil</p>
+        <P style="display:none; color:red;" id="kBesar">*password harus memiliki 1 karakter huruf besar</P>
+        <p style="display:none;color:red;" id="kAngka">*password harus memiliki 1 karakter angka</p>
         <button type="button" name="button" onclick="validasi();">Daftar</button>
       </form>
     </div>
@@ -89,8 +89,6 @@
             }else if(cek.value.length<5){
               isPendek = true;
             }else{
-              alert(cek.value);
-
               //cek ada tidaknya angka huruf kecil besar
               for (var i = 0; i < cek.value.length; i++){
                 var ch = cek.value.charAt(i);
