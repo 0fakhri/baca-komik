@@ -11,7 +11,7 @@
 
 .d-kiri{
     float: left;
-    border: 2px solid chartreuse;
+    /* border: 2px solid chartreuse; */
     width: 63%;
     height: 1000px;
 }
@@ -27,7 +27,7 @@
 .a1{
     position: relative;
     z-index: 2;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 280px;
     display: inline-block;
     background-color: #fff
@@ -50,7 +50,7 @@
     position: relative;
     bottom: 50px;
     width: 200px;
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
     display: inline-block;
 
 }
@@ -96,7 +96,7 @@
     background-color: #fff;
     width: 100%;
     margin: 30px 0 0 30px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 5px grey;
 }
 
 .c h3{
@@ -117,7 +117,7 @@
     width: 35%;
     float: right;
     margin: 0 0 0 20px;
-    border: 2px solid black 
+    /* border: 2px solid black  */
 }
 
 .k{
@@ -169,7 +169,7 @@
 .kk-g{
     height:100px;
     width: 75px;
-    border: 2px solid cyan;
+    /* border: 2px solid cyan; */
     display:inline-flex;
 }
 
