@@ -1,5 +1,12 @@
-.atas{
 
+.konten{
+  margin: 100px 40px 40px 40px;
+  display: block;
+  border: 2px solid cyan;
+}
+
+.atas{
+  width: 100%;
 }
 
 .atas-kiri{
@@ -18,30 +25,48 @@
   float: left;
   margin: 0;
   padding: 0px;
-  float: left;
 }
 
 .isi{
   box-sizing: border-box;
   padding: 20px;
-  width: 100%;
+  /* width: 100%; */
   background-color:#fff;
   /* border: 2px solid blue; */
   margin-bottom: 40px;
-  /* height: 40%; */
+  box-shadow: 0 0 5px grey;
 }
 
+.jud{
+  font-size: 22px;
+  font-weight: 700;
+}
 
 .cover1{
-  width: 25%;
-  margin: 10px 10px 10px 0;
-  display: inline-block;
+  margin: 10px;
+  float: left;
 }
+
+.cover1 a{
+  text-decoration: none;
+}
+
+.judul{
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.episode{
+  color: black;
+  font-size: 16px;
+}
+
 .column {
   float: left;
-  width: 25%;
   padding: 0 10px;
-  height: 300px;
+  width: 25%;
+  height: 100%;
 }
 .row {
   padding: auto 0;
@@ -54,38 +79,77 @@
   display: table;
   clear: both;
 }
+
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
 }
 
-.card a img{
-  width: 100%;
-}
+
 
 /* sidebar  */
 
 .sidebar{
   width: 24.5%;
-  /* border: 2px solid blue; */
   float: right;
-
 }
 
 .kanan1{
+  width: 100%;
+  box-sizing: border-box; 
   background-color: #fff;
   /* border: 2px solid black; */
   margin-bottom: 40px;
+  padding: 10px;
+  box-shadow: 0 0 5px grey;
 }
-.is li a {
+
+.is ul li{
+  list-style-type: none;
+}
+
+.is ul li a {
   margin: 5px;
   color: #595959;
   padding: 0px 0px;
   text-align: left;
   text-decoration: none;
 }
+
+.is{
+  margin-bottom: 10px;
+}
+
+
 .is li a:hover{
   color: #2095F2;
+}
+
+.btn-banyak a{
+  text-decoration: none;
+  color: white;
+}
+
+.btn-banyak{
+  width: 100%;
+  background-color: #2095F2;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+  .konten{
+    margin: 100px 10px 10px 10px
+  }
+  .main-kiri{
+    width: 100%;
+  }
+  .sidebar{
+    width: 100%;
+    float: right;
+  }
+  .jud{
+    font-size: 16px;
+    font-weight: 700;
+  }
 }
