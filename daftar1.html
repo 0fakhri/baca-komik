@@ -46,7 +46,7 @@
       <form action="">
         <h1>DAFTAR</h1> <br>
         <input type="email" placeholder="Masukkan email anda..."><br>
-        <button type="button" name="button"><a href="daftar2.html">Lanjutkan</a></button>
+        <button type="button" name="button" onclick="link()">Lanjutkan</button>
       </form>
     </div>
 
@@ -66,6 +66,10 @@
             <script>
             var x = document.getElementById("bar");
             var y = document.getElementById("find");
+
+            function link(){
+              window.location.href = "daftar2.html";
+            }
             function bar() {
                if (x.style.display === "none") {
                  x.style.display = "block";

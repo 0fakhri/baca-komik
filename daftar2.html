@@ -45,9 +45,9 @@
     <div class="konten">
       <form action="">
         <h1>DAFTAR</h1><br>
-        <input type="password" name="" id="" placeholder="Masukkan kata sandi"  id="pass"><br>
+        <input type="password" name="" placeholder="Masukkan kata sandi"  id="pass"><br>
         <input type="password" name="" id="" placeholder="Konfirmasi kata sandi"><br>
-        <button type="button" name="button" onclick="coba();"><a href="masuk.html">Daftar</a></button>
+        <button type="button" name="button" onclick="coba();">Daftar</button>
       </form>
     </div>
 
@@ -67,11 +67,21 @@
         <script>
         var x = document.getElementById("bar");
         var y = document.getElementById("find");
-
-        var cek = document.getElementById("pass").value;
+// validasi
         function coba(){
-          alert(cek);
+          var cek = document.getElementById("pass");
+          if (cek.value.length>8){
+            alert("terlalu panjang"+cek.value);
+            cek.value = "";
+          }else if(cek.value.length<5){
+            alert("terlalu pendek "+cek.value);
+          }else{
+            alert(cek.value);
+            window.location.href = "masuk.html";
+          }
+
         }
+
         alert(cek);
         function bar() {
            if (x.style.display === "none") {

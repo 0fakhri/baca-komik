@@ -18,12 +18,15 @@ form button{
   border: 0;
   margin: 10px;
 }
-form button a{
+form button{
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
   margin: 20px;
+}
+form button:hover{
+  cursor:pointer;
 }
 
 @media screen and (max-width: 400px) {
