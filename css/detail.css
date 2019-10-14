@@ -5,12 +5,18 @@
     background-position: no-repeat;
     position: relative;
     z-index: 1;
+    /* height:500px;
+    background-image: url("../img/koveropm.png"); */
+}
+.g img{
+    width: 100%;
 }
 
 .d-kiri{
     float: left;
+    margin: 0 0 0 20px;
     /* border: 2px solid chartreuse; */
-    width: 63%;
+    width: 71.5%;
 }
 
 .a{
@@ -36,12 +42,12 @@
     height: 375px;
 }
 
-/* .aa1 img{
-    width: 225px;
-    height: 350px;
-    margin-right: 10px;
-    display: inline-block;
-} */
+.aa1 img{
+    width: 100%;
+    height: auto;
+    /* margin-right: 10px;
+    display: inline-block; */
+}
 
 .a2{
     position: relative;
@@ -87,7 +93,21 @@
     margin: 20px;
 }
 
-
+.btn-banyak a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .btn-banyak{
+    width: 100%;
+    background-color: #c5c5c5;
+    text-align: center;
+  }
+  
+  .btn-banyak:hover{
+    background-color: #2095F2;
+    cursor: pointer;
+  }
 
 .c{
     background-color: #fff;
@@ -110,7 +130,7 @@
 }
 
 .d-kanan{
-    width: 35%;
+    width: 24.5%;
     float: right;
     margin: 0 0 0 20px;
     /* border: 2px solid black  */
@@ -118,15 +138,49 @@
 
 .k{
     /* border: 2px solid cyan; */
-    margin: 20px 30px 0 30px;
+    margin: 20px 20px 0 10px;
     background-color: #fff;
     box-shadow: 0 0 5px grey;
     height: 40%;
 }
 
+.atas{
+    width: 100%;
+    margin: 10px 0 10px 0;
+  }
+  
+  .atas-kiri{
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .atas-kanan{
+    display: inline-block;
+    float: right;
+  }
+  
+  .atas-kanan a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #595959;
+  }
+  
+  .atas-kanan a:hover{
+    color: #2095F2;
+  }
+
+  .jud{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+.kk{
+    width: 100%;
+}
+
 .l{
     /* border: 2px solid cyan; */
-    margin: 20px 30px 0 30px;
+    margin: 20px 20px 0 10px;
     background-color: #fff;
     box-shadow: 0 0 5px grey;
 }
@@ -176,11 +230,19 @@
 }
 
 @media screen and (max-width: 800px) {
+    
     .d-kiri{
+        margin: 0;
         width: 100%;
     }
 
     .d-kanan{
+        margin: 0;
         width: 100%;
     }
+
+    .jud{
+        font-size: 16px;
+        font-weight: 700;
+      }
 }
