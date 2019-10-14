@@ -3,29 +3,49 @@
     /* border: 2px solid saddlebrown; */
     align-content: center;
     background-position: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.d-kiri{
+    float: left;
+    /* border: 2px solid chartreuse; */
+    width: 63%;
 }
 
 .a{
     /* border: 2px solid red; */
-    width: 55%;
-    margin: -150px 0 0 90px;
-    background-color: #fff
+    width: 100%;
+    margin: -150px 0 0 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px grey;
 }
 
 .a1{
+    position: relative;
+    z-index: 2;
     /* border: 2px solid black; */
     width: 280px;
     display: inline-block;
+    background-color: #fff
 }
 
 .aa1{
     margin: 10px;
     width: 250px;
     height: 375px;
-
 }
 
+/* .aa1 img{
+    width: 225px;
+    height: 350px;
+    margin-right: 10px;
+    display: inline-block;
+} */
+
 .a2{
+    position: relative;
+    bottom: 50px;
     width: 200px;
     /* border: 2px solid blueviolet; */
     display: inline-block;
@@ -52,10 +72,11 @@
   }
 
 .b{
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     background-color: #fff;
-    width: 55%;
-    margin: 30px 0 0 90px;
+    width: 100%;
+    margin: 30px 0 0 0px;
+    box-shadow: 0 0 5px grey;
 }
 
 .b h3{
@@ -66,8 +87,100 @@
     margin: 20px;
 }
 
+
+
 .c{
     background-color: #fff;
-    width: 55%;
-    margin: 30px 0 0 90px;
+    width: 100%;
+    margin: 30px 0 0 0;
+    box-shadow: 0 0 5px grey;
+}
+
+.c h3{
+    margin: 20px
+}
+
+.cc{
+    margin: 0 0 3px 0;
+}
+
+.cc p{
+    margin: 5px;
+    display: inline
+}
+
+.d-kanan{
+    width: 35%;
+    float: right;
+    margin: 0 0 0 20px;
+    /* border: 2px solid black  */
+}
+
+.k{
+    /* border: 2px solid cyan; */
+    margin: 20px 30px 0 30px;
+    background-color: #fff;
+    box-shadow: 0 0 5px grey;
+    height: 40%;
+}
+
+.l{
+    /* border: 2px solid cyan; */
+    margin: 20px 30px 0 30px;
+    background-color: #fff;
+    box-shadow: 0 0 5px grey;
+}
+
+
+
+.kk-kiri{
+    margin: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+.kk-kanan{
+    margin: 10px;
+    display: inline-block;
+    float: right;
+}
+
+.ll-kiri{
+    margin: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+.ll-kanan{
+    margin: 10px;
+    display: inline-block;
+    float: right;
+}
+
+.kk-isi{
+    width: 100%;
+    margin: 30px;
+}
+
+.kk-g{
+    height:100px;
+    width: 75px;
+    /* border: 2px solid cyan; */
+    display:inline-flex;
+}
+
+.kk-konten{
+    /* display:inline-block; */
+    margin: 10px;
+    display: inline-flex;
+}
+
+@media screen and (max-width: 800px) {
+    .d-kiri{
+        width: 100%;
+    }
+
+    .d-kanan{
+        width: 100%;
+    }
 }

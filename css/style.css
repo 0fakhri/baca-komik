@@ -121,12 +121,6 @@ nav #find input{
         }
     }
 
-/* content  */
-    .konten{
-      margin: 100px 40px 40px 40px;
-      /* border: 2px solid gold; */
-    }
-
 /* footer  */
 footer{
   position: static;
