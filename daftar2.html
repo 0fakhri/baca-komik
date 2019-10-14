@@ -45,9 +45,9 @@
     <div class="konten">
       <form action="">
         <h1>DAFTAR</h1><br>
-        <input type="password" name="" id="" placeholder="Masukkan kata sandi"><br>
+        <input type="password" name="" id="" placeholder="Masukkan kata sandi"  id="pass"><br>
         <input type="password" name="" id="" placeholder="Konfirmasi kata sandi"><br>
-        <button type="button" name="button"><a href="masuk.html">Daftar</a></button>
+        <button type="button" name="button" onclick="coba();"><a href="masuk.html">Daftar</a></button>
       </form>
     </div>
 
@@ -67,6 +67,12 @@
         <script>
         var x = document.getElementById("bar");
         var y = document.getElementById("find");
+
+        var cek = document.getElementById("pass").value;
+        function coba(){
+          alert(cek);
+        }
+        alert(cek);
         function bar() {
            if (x.style.display === "none") {
              x.style.display = "block";
