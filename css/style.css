@@ -9,6 +9,9 @@ body{
     background-image: url("../img/background.png");
     min-height: 100%;
 }
+.konten{
+  margin : 100px 0 0 0;
+}
 .kanan{
      float:right;
  }
