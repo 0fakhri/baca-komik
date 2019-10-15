@@ -1,0 +1,247 @@
+/* tambahan untuk dropdown*/
+.kanan > i{
+  cursor: pointer;
+}
+
+.kanan > ul{
+  width: 250px;
+  text-align: left;
+}
+.kanan > ul > li{
+  font-weight: normal;
+  font-size: 20px;
+}
+.kanan > ul > li a{
+  cursor: pointer;
+}
+
+/* modal box */
+
+.modal-konten button{
+  border: none;
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;;
+  padding: 10px;;
+  border-radius: 4px;
+  background-color: #2196F3;
+  box-shadow: 0 3px 6px #2095F2;
+  color: white;
+}
+
+.modal-konten button:hover{
+  cursor:pointer;
+}
+.tutup{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.bg-modal{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+.modal-konten{
+  border-radius: 4px;
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.modal-konten  input, .modal-konten textarea{
+  text-align: center;
+  width: 300px;
+  margin: 10px 0 10px 0;
+  border-radius: 4px;
+}
+.modal-konten  input{
+  height: 40px;
+}
+
+
+/* main */
+.konten{
+  margin: 100px 40px 40px 40px;
+  display: block;
+  /* border: 2px solid cyan; */
+}
+
+.atas{
+  width: 100%;
+}
+
+  .atas-kiri{
+    display: inline-block;
+    text-align: left;
+  }
+
+  .atas-kanan{
+    display: inline-block;
+    float: right;
+  }
+
+  .atas-kanan a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #595959;
+  }
+
+  .atas-kanan a:hover{
+    color: #2095F2;
+  }
+
+  .jud{
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+.main-kiri{
+  width: 71.5%;
+  /* border: 2px solid black; */
+  float: left;
+  margin: 0;
+  padding: 0px;
+}
+
+.isi{
+  box-sizing: border-box;
+  padding: 20px;
+  /* width: 100%; */
+  background-color:#fff;
+  /* border: 2px solid blue; */
+  margin-bottom: 40px;
+  box-shadow: 0 0 5px grey;
+}
+
+.cover1{
+  margin: 10px;
+  float: left;
+}
+
+.cover1 a{
+  text-decoration: none;
+}
+
+.judul{
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.episode{
+  color: black;
+  font-size: 16px;
+}
+
+.column {
+  float: left;
+  padding: 0 10px;
+  width: 25%;
+  height: 100%;
+}
+.row {
+  padding: auto 0;
+  height: 100%;
+  margin: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  padding: 16px;
+  text-align: center;
+}
+
+
+
+/* sidebar  */
+
+.sidebar{
+  width: 24.5%;
+  float: right;
+}
+
+.kanan1{
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  /* border: 2px solid black; */
+  margin-bottom: 40px;
+  padding: 10px;
+  box-shadow: 0 0 5px grey;
+}
+
+.is ul li{
+  list-style-type: none;
+}
+
+.is ul li a {
+  margin: 5px;
+  color: #595959;
+  padding: 0px 0px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.is{
+  margin-bottom: 10px;
+}
+
+
+.is li a:hover{
+  color: #2095F2;
+}
+
+.btn-banyak a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #2095F2;
+}
+
+.btn-banyak{
+  width: 100%;
+  text-align: center;
+}
+
+.btn-banyak:hover{
+  cursor: pointer;
+}
+.btn-banyak i{
+  color: #2095F2;
+}
+
+
+@media screen and (max-width: 800px) {
+  .konten{
+    margin: 100px 10px 10px 10px
+  }
+  .main-kiri{
+    width: 100%;
+  }
+  .sidebar{
+    width: 100%;
+    float: right;
+  }
+  .jud{
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
