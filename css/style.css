@@ -82,6 +82,12 @@ nav .kanan >  a{
 
 
 }
+.kanan ul{
+  position: absolute;
+  right: 10px;
+  top: 70px;
+
+}
 nav li input, nav #find input{
   height: 33px;
   width: 300px;
@@ -91,6 +97,10 @@ nav #find input{
   margin-bottom: 10px;
 }
 
+.kanan > ul > li > a{
+  margin: 10px;
+  padding: 0;
+}
 
 .icon{
   display: none;
