@@ -22,7 +22,7 @@
   }
 
   .atas select{
-  margin: 20px;
+    margin: 20px;
   }
 
 .isi{
@@ -31,7 +31,38 @@
   padding: 20px;
 }
 
+.judul{
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
 
+.episode{
+  color: black;
+  font-size: 16px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+.row {
+  padding: auto 0;
+  height: 100%;
+  margin: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  padding: 16px;
+  text-align: center;
+}
 
 .btn-banyak{
   width: 100%;
