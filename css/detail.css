@@ -188,6 +188,26 @@
     box-shadow: 0 0 5px grey;
 }
 
+.ll a{
+    text-decoration: none;
+}
+
+.judul{
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .episode{
+    color: black;
+    font-size: 16px;
+  }
+
+  .pengarang{
+    color: black;
+    font-size: 16px;
+  }
+
 .kk-kiri{
     margin: 10px;
     display: inline-block;
@@ -215,19 +235,6 @@
 .kk-isi{
     width: 100%;
     margin: 30px;
-}
-
-.kk-g{
-    height:100px;
-    width: 75px;
-    /* border: 2px solid cyan; */
-    display:inline-flex;
-}
-
-.kk-konten{
-    /* display:inline-block; */
-    margin: 10px;
-    display: inline-flex;
 }
 
 @media screen and (max-width: 800px) {
