@@ -1,14 +1,17 @@
 .konten{
-  box-sizing: border-box;
-  padding: 20px;
   background-color:#fff;
   margin: 100px 20px 40px 20px;
   box-shadow: 0 0 5px grey;
 }
 
+.konten h3{
+  box-sizing: border-box;
+  padding: 15px;
+}
+
 .atas{
-  height: 35px;
-  background-color: #a7a7a7;
+  height: 53px;
+  background-color: #eeeeee;
   width: 100%;
   text-align: right;
 }
@@ -19,7 +22,13 @@
 }
 
 .atas select{
-  margin: 10px;
+  margin: 20px;
+}
+
+.isi{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 .cover1{
@@ -41,3 +50,22 @@
   color: black;
   font-size: 16px;
 }
+
+.btn-banyak{
+  width: 100%;
+  text-align: center;
+}
+
+  .btn-banyak a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #2095F2;
+  }
+
+  .btn-banyak:hover{
+    cursor: pointer;
+  }
+
+  .btn-banyak i{
+    color: #2095F2;
+  }
