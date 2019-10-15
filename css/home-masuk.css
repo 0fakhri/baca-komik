@@ -74,6 +74,7 @@
 
 
 /* main */
+
 .konten{
   margin: 100px 40px 40px 40px;
   display: block;
@@ -127,6 +128,10 @@
   box-shadow: 0 0 5px grey;
 }
 
+.tengah{
+  width: 100%;
+}
+
 .cover1{
   margin: 10px;
   float: left;
@@ -136,16 +141,24 @@
   text-decoration: none;
 }
 
-.judul{
-  color: black;
-  font-size: 16px;
-  font-weight: 700;
-}
+/* JUDUL , PENGARANG , EPISODE */
 
-.episode{
-  color: black;
-  font-size: 16px;
-}
+    .judul{
+      color: black;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .episode{
+      color: black;
+      font-size: 16px;
+    }
+
+    .pengarang{
+      color: black;
+      font-size: 16px;
+    }
+
 
 .column {
   float: left;
@@ -157,6 +170,10 @@
   padding: auto 0;
   height: 100%;
   margin: 0;
+}
+
+.row a{
+  text-decoration: none;
 }
 
 .row:after {
@@ -181,7 +198,7 @@
 
 .kanan1{
   width: 100%;
-  box-sizing: border-box;
+  box-sizing: border-box; 
   background-color: #fff;
   /* border: 2px solid black; */
   margin-bottom: 40px;
@@ -224,10 +241,40 @@
 .btn-banyak:hover{
   cursor: pointer;
 }
+
 .btn-banyak i{
   color: #2095F2;
 }
 
+.kanan2{
+  width: 100%;
+}
+
+.kanan2-isi{
+  position: relative;
+  margin: 10px;
+  width: 100%;
+  float: left;
+}
+
+.num{
+  position: relative;
+  top: 0;
+  display: inline-block;
+}
+
+.kanan2-isi a{
+  text-decoration: none;
+}
+
+.kanan2-isi img{
+  display: inline-block;
+}
+
+.lol{
+  margin: 0 0 10px 10px;
+  display: inline-block;
+}
 
 @media screen and (max-width: 800px) {
   .konten{
