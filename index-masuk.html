@@ -34,8 +34,8 @@
                       <li class="garis"><a style="color:black;d" href="">Rp. 1000,000 <i class="fa fa-plus-square" aria-hidden="true"></i></a></li><br>
                       <li><a href="">komik</a></li> <br>
                       <li><a class="abu"href="">koleksi komik</a></li> <br>
-                      <li class="garis"><a class="abu" href="">tambah komik</a></li> <br>
-                      <li class="garis"><a href="">pengaturan</a></li> <br>
+                      <li class="garis"><a class="abu" onclick="tambahKomik();" >tambah komik</a></li> <br>
+                      <li class="garis"><a>profil</a></li> <br>
                       <li><a style="color:rgba(255,0,0,0.5);"href="index.html">logout</a></li>
                     </ul>
             </div>
@@ -51,8 +51,24 @@
             </ul>
         </nav>
 
-        <!-- KONTEN -->
+<!-- modal box -->
+      <div class="bg-modal" id="modal" style="display:flex;">
+        <div class="modal-konten">
+          <div class="tutup" onclick="tutup();">+</div>
+          <h1>Tambah komik</h1>
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" id="" placeholder="judul komik"><br>
+            <textarea name="message" style="width:300px; height:100px;" placeholder="deskripsi"></textarea><br>
+            <label for="file" style="padding-top:10px;">gambar cover</label> <br>
+            <input type="file" name="file" id="" > <br>
+            <button type="button" name="button">TAMBAH</button>
+          </form>
 
+        </div>
+      </div>
+
+
+<!-- KONTEN -->
     <div class="konten">
         <div class="main-kiri">
             <div class="isi">
@@ -298,7 +314,6 @@
            y.style.display = "none";
          }
         }
-
       var z = document.getElementById("dropdown");
       function drop() {
            if (z.style.display === "none") {
@@ -306,6 +321,13 @@
            } else {
              z.style.display = "none";
            }
+          }
+
+      function tambahKomik() {
+          document.getElementById("modal").style.display = "flex";
+          }
+      function tutup() {
+          document.getElementById("modal").style.display = "none";
           }
     </script>
 </body>
