@@ -6,12 +6,12 @@
 
 .konten h3{
   box-sizing: border-box;
-  padding: 10px;
+  padding: 15px;
 }
 
 .atas{
-  height: 35px;
-  background-color: #a7a7a7;
+  height: 53px;
+  background-color: #eeeeee;
   width: 100%;
   text-align: right;
 }
@@ -22,7 +22,7 @@
 }
 
 .atas select{
-  margin: 10px;
+  margin: 20px;
 }
 
 .isi{
