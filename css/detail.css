@@ -42,13 +42,12 @@
 }
 
 .aa1{
-    margin: 10px;
-    width: 90%;
+    width: 100%;
 }
 
 .aa1 img{
+    padding: 15px;
     width: 100%;
-    height: auto;
 }
 
 .a2{
@@ -261,9 +260,19 @@
     float: right;
 }
 
+@media screen and (max-width:1100px){
+    .atas-kiri > p{
+        font-size: 14px;
+        font-weight: bold;
+    }
 
+    .atas-kanan > a{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     .ini-isi{
         margin-top: 10%;
     }
@@ -273,16 +282,21 @@
     }
 
     .a1{
-        margin-top: 60px;
-        left: 40%;
-        width: 25%;
+        margin: 60px 5px 5px 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
     }
 
+    .aa1 img {
+        padding: 5px;
+    }
     .a2{
-        left: 40%;
+        left: 50%;
+        transform: translateX(-50%);
         margin-top: 60px;
         display: block;
-        width: 25%;
+        width: 30%;
     }
 
     .dul p{
