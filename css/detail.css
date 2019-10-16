@@ -138,9 +138,10 @@
 }
 
 .d-kanan{
+    box-sizing: border-box;
+    padding: 10px;
     width: 24.5%;
     float: right;
-    margin: 0 10px 0 10px;
 }
 
 .k{
@@ -148,7 +149,6 @@
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
-    /* border: 2px solid cyan; */
     background-color: #fff;
     box-shadow: 0 0 5px grey;
 }
@@ -187,13 +187,29 @@
     width: 100%;
 }
 
+.kk-isi{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+
+.kk-isi a{
+    text-decoration: none;
+    width: 100%;
+}
+
 .l{
     width: 100%;
     box-sizing: border-box;
-    padding: 5px;
+    padding: 10px;
     margin-top: 20px;
     background-color: #fff;
     box-shadow: 0 0 5px grey;
+}
+
+.lo{
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 .ll a{
@@ -240,10 +256,7 @@
     float: right;
 }
 
-.kk-isi{
-    width: 100%;
-    margin: 30px;
-}
+
 
 @media screen and (max-width: 1000px) {
     .ini-isi{
