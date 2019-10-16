@@ -108,7 +108,9 @@ nav #find input{
   margin: 5px;;
   padding: 0;
 }
-
+.kanan > li > input{
+  margin-top: 20px;
+}
 
 /* tambahan untuk dropdown*/
 .kanan > i{
