@@ -269,7 +269,7 @@ footer{
       margin: 10px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   footer div a {
     text-decoration: none;
     margin: 0px;
@@ -282,6 +282,9 @@ footer{
       color: #7F7F7F;
       margin: 0;
       padding: 0;
+  }
+  .konten{
+    margin: 5px;
   }
 }
 
