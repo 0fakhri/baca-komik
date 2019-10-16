@@ -56,6 +56,8 @@
 .konten{
   margin: 100px 40px 40px 40px;
   display: block;
+  background-color: rgba(0,0,0,0);
+  box-shadow: none;
   /* border: 2px solid cyan; */
 }
 

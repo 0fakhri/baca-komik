@@ -303,3 +303,26 @@ footer p{
     display: none;
   }
 }
+
+
+/* loading */
+#loading{
+  width: 80px;
+  height: 80px;
+  border: solid 12px #ccc;
+  border-top-color: #2095F2;
+  border-radius: 100%;
+
+  position: fixed;
+  right: 50%;
+  bottom: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+
+  animation: putar 1s linear infinite;
+}
+
+@keyframes putar {
+  from{transform: rotate(0deg)}
+  to{transform: rotate(360deg)}
+}
