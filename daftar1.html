@@ -63,45 +63,7 @@
         </div>
     </footer>
 
-    <script>
-            var x = document.getElementById("bar");
-            var y = document.getElementById("find");
-            function validasi(){
-              var cek = document.getElementById("mymail");
-              var isEmail = false;
-              for (var i = 0; i < cek.value.length; i++){
-                  var ch = cek.value.charAt(i);
-                  if(ch == "@"){
-                    isEmail = true;
-                    break;
-                    }
-                 }
-              if (isEmail == false){
-                document.getElementById("email").style.display = "block";
-              } else{
-                document.getElementById("email").style.display = "none";
-              }
-              //lanjut ke halaman selanjutnya
-              if(isEmail==true){
-                window.location.href = "daftar2.html";
-              }
-            }
-            function bar() {
-               if (x.style.display === "none") {
-                 x.style.display = "block";
-                 y.style.display = "none";
-               } else {
-                 x.style.display = "none";
-               }
-              }
-              function find() {
-                 if (y.style.display === "none") {
-                   y.style.display = "block";
-                   x.style.display = "none";
-                 } else {
-                   y.style.display = "none";
-                 }
-                }
-            </script>
-    </body>
-    </html>
+    <script src="js\validsai_daftar1.js"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>
