@@ -29,11 +29,17 @@
   width: 100%;
   box-sizing: border-box;
   padding: 20px;
+  text-align: center;
 }
 
 .cover1{
-  margin: 10px 20px 10px 20px;
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
   float: left;
+}
+
+.cover1:hover{
+  background-color: #e2e2e2;
 }
 
 .cover1 a{
