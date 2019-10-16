@@ -1,3 +1,48 @@
+/* slider */
+.tengah{
+  text-align: center;
+  height: 280px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.kiri_panah, .kanan_panah{
+  position: relative;
+  width: 12px;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+.kiri_panah:hover, .kanan_panah:hover{
+  cursor: pointer;
+}
+.kanan_panah{
+    top: -180px;
+  float: right;
+}
+.kiri_panah{
+  top: -160px;
+  transform: rotate(180deg);
+  display: none;
+}
+
+.tengah > .kiri_panah{
+  position: relative;
+  left: 0;
+  width: 12px;
+  top: 150px;
+  z-index: 2;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  transform: rotate(180deg);
+}
+.cover1{
+  display: inline-block;
+}
+
+
+
+
 
 .konten{
   margin: 100px 40px 40px 40px;
@@ -58,7 +103,6 @@
 
 .cover1{
   margin: 10px;
-  float: left;
 }
 
 .cover1 a{
@@ -122,7 +166,7 @@
 
 .kanan1{
   width: 100%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   background-color: #fff;
   /* border: 2px solid black; */
   margin-bottom: 40px;
