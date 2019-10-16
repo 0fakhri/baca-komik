@@ -108,7 +108,9 @@ nav #find input{
   margin: 5px;;
   padding: 0;
 }
-
+.kanan > li > input{
+  margin-top: 20px;
+}
 
 /* tambahan untuk dropdown*/
 .kanan > i{
@@ -198,10 +200,15 @@ nav #find input{
 .biru{
   color: blue;
 }
-.kecil{
+.merah{
+  color: rgba(255,0,0,0.8);
+}
+.size14{
   font-size: 14px;
 }
-
+.size18{
+  font-size: 18px;
+}
 .icon{
   display: none;
 }

@@ -1,6 +1,8 @@
 .konten{
   background-color: #fff;
   padding: 40px;
+  margin: 100px 40px 40px 40px;
+  min-height: 475px;
 }
 .konten h1{
   text-align: center;
@@ -8,4 +10,41 @@
 .konten p{
   margin: 10px 0;
   text-align: justify;
+}
+
+form{
+  text-align: center;
+}
+form button{
+  border: none;
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;;
+  padding: 10px;;
+  border-radius: 4px;
+  background-color: #2196F3;
+  box-shadow: 0 3px 6px #2095F2;
+  color: white;
+  width: 66px;
+}
+form input{
+  height: 33px;
+  width: 300px;
+  border-radius: 4px;
+}
+textarea{
+  border-radius: 4px;
+  height:200px;
+  width:400px;
+}
+
+
+@media screen and (max-width: 600px) {
+  textarea{
+    width: 90%;
+  }
+  form input{
+    width: 90%;
+  }
+
 }
