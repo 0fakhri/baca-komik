@@ -255,6 +255,12 @@ footer{
   box-shadow: 0 -4px 7px rgba(0,0,0,0.5)
 
 }
+footer a:hover{
+  color: #2095F2;
+}
+footer p{
+  cursor: default;
+}
 @media screen and (min-width: 400px) {
   footer{
     position: static;
