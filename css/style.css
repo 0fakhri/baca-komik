@@ -57,7 +57,7 @@ nav li a {
     font-weight: bold;
   }
 nav li a:hover:not(.active) {
-    color: #000;
+    color: #2095F2
   }
 
 
