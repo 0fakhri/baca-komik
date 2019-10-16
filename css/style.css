@@ -9,7 +9,11 @@ body{
     background-image: url("../img/background.png");
 }
 .konten{
-  margin : 100px 0 0 0;
+  margin : 100px 40px 40px 40px;
+  background-color: #fff;
+  min-height: 475px;
+  padding: 20px;
+  box-shadow: 0 0 5px grey;
 }
 .kanan{
      float:right;
@@ -284,7 +288,7 @@ footer{
       padding: 0;
   }
   .konten{
-    margin: 5px;
+    margin: 100px 10px 20px 10px;
   }
 }
 
