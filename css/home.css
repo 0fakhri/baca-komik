@@ -24,7 +24,9 @@
   margin-left: 10px;
   top: -160px;
   transform: rotate(180deg);
-  display: none;
+  display: flex;
+  color: white;
+  cursor: default;
 }
 
 .tengah > .kiri_panah{

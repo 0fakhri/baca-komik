@@ -6,21 +6,21 @@ let akhir=4;
 
 function kanan_klik(){
   console.log("jalan kanan");
-  document.querySelector(".kiri_panah").style.display = "flex";
   if(akhir<allbox.length-1){
     awal+=1;
     akhir+=1;
   }
   console.log(akhir);
   if(awal == 0){
-    document.querySelector(".kiri_panah").style.display = "none";
+    document.querySelector(".kiri_panah").style.color = "white";
+
   } else{
-    document.querySelector(".kiri_panah").style.display = "flex";
+    document.querySelector(".kiri_panah").style.color = "black";
   }
   if(akhir == allbox.length-1){
-    document.querySelector(".kanan_panah").style.display = "none";
+    document.querySelector(".kanan_panah").style.color = "white";
   } else {
-    document.querySelector(".kanan_panah").style.display = "flex";
+    document.querySelector(".kanan_panah").style.color = "black";
   }
   for (let i = 0; i<= allbox.length-1;i++){
     if(i>=awal && i<=akhir){
@@ -37,14 +37,14 @@ function kiri_klik(){
     akhir-=1;
   }
   if(awal == 0){
-    document.querySelector(".kiri_panah").style.display = "none";
+    document.querySelector(".kiri_panah").style.color = "white";
   } else{
-    document.querySelector(".kiri_panah").style.display = "flex";
+    document.querySelector(".kiri_panah").style.color = "black";
   }
   if(akhir == allbox.length-1){
-    document.querySelector(".kanan_panah").style.display = "none";
+    document.querySelector(".kanan_panah").style.color = "white";
   } else {
-    document.querySelector(".kanan_panah").style.display = "flex";
+    document.querySelector(".kanan_panah").style.color = "black";
   }
   for (let i = 0; i<= allbox.length-1;i++){
     if(i>=awal && i<=akhir){
