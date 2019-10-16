@@ -192,7 +192,7 @@ nav #find input{
   margin-left: 10px;
   font-size: 14px;
 }
-.green{
+.hijau{
   color: green;
 }
 .biru{
@@ -201,9 +201,6 @@ nav #find input{
 .kecil{
   font-size: 14px;
 }
-/* {
-  border-bottom: 1px solid grey;
-} */
 
 .icon{
   display: none;
