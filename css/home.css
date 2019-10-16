@@ -16,10 +16,12 @@
   cursor: pointer;
 }
 .kanan_panah{
-    top: -180px;
+  margin-right: 10px;
+  top: -180px;
   float: right;
 }
 .kiri_panah{
+  margin-left: 10px;
   top: -160px;
   transform: rotate(180deg);
   display: none;
@@ -37,17 +39,29 @@
   transform: rotate(180deg);
 }
 .cover1{
+  box-sizing: border-box;
+  padding: 10px;
   display: inline-block;
+  margin: 10px 0px 10px 0px;
 }
 
+.cover1:hover{
+  background-color: #e2e2e2;
+}
 
-
-
+.cover1 a{
+  text-decoration: none;
+}
 
 .konten{
   margin: 100px 40px 40px 40px;
   display: block;
   /* border: 2px solid cyan; */
+}
+
+.isi-kanan1{
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 .atas{
@@ -88,8 +102,6 @@
 }
 
 .isi{
-  box-sizing: border-box;
-  padding: 20px;
   /* width: 100%; */
   background-color:#fff;
   /* border: 2px solid blue; */
@@ -97,16 +109,13 @@
   box-shadow: 0 0 5px grey;
 }
 
+.isi2{
+  box-sizing: border-box;
+  padding: 20px;
+}
+
 .tengah{
   width: 100%;
-}
-
-.cover1{
-  margin: 10px;
-}
-
-.cover1 a{
-  text-decoration: none;
 }
 
 /* JUDUL , PENGARANG , EPISODE */
@@ -140,6 +149,10 @@
   margin: 0;
 }
 
+.row:nth-child(odd){
+  background-color: #e9e9e9;
+}
+
 .row a{
   text-decoration: none;
 }
@@ -166,11 +179,9 @@
 
 .kanan1{
   width: 100%;
-  box-sizing: border-box;
   background-color: #fff;
   /* border: 2px solid black; */
   margin-bottom: 40px;
-  padding: 10px;
   box-shadow: 0 0 5px grey;
 }
 
@@ -202,12 +213,14 @@
 }
 
 .btn-banyak{
+  padding: 5px;
   width: 100%;
   text-align: center;
 }
 
 .btn-banyak:hover{
   cursor: pointer;
+  background-color: #e2e2e2;
 }
 
 .btn-banyak i{

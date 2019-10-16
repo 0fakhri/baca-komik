@@ -86,8 +86,11 @@
     background-color: #fff;
     width: 100%;
     margin: 30px 0 0 0px;
-    padding: 10px;
     box-shadow: 0 0 5px grey;
+}
+
+.isi-b{
+    padding: 10px;
 }
 
 .b h3{
@@ -105,12 +108,13 @@
   }
   
   .btn-banyak{
+    padding: 10px;
     width: 100%;
     text-align: center;
   }
   
   .btn-banyak:hover{
-    
+    background-color: #e2e2e2;
     cursor: pointer;
   }
   .btn-banyak i{
