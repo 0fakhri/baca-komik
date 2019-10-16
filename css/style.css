@@ -200,10 +200,15 @@ nav #find input{
 .biru{
   color: blue;
 }
-.kecil{
+.merah{
+  color: rgba(255,0,0,0.8);
+}
+.size14{
   font-size: 14px;
 }
-
+.size18{
+  font-size: 18px;
+}
 .icon{
   display: none;
 }
