@@ -11,6 +11,12 @@
     width: 100%;
 }
 
+.ini-isi{
+    width: 100%;
+    margin: 20px 0 20px 0;
+    /* border: 2px solid seagreen; */
+}
+
 .d-kiri{
     float: left;
     margin: 0 0 0 20px;
@@ -37,15 +43,12 @@
 
 .aa1{
     margin: 10px;
-    width: 250px;
-    height: 375px;
+    width: 90%;
 }
 
 .aa1 img{
     width: 100%;
     height: auto;
-    /* margin-right: 10px;
-    display: inline-block; */
 }
 
 .a2{
@@ -57,11 +60,13 @@
 
 }
 
-.a2 h1{
-    margin-bottom: 10px;
+.dul{
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .par{
+    margin-top: 10px;
     margin-bottom: 35px
 }
 
@@ -135,16 +140,17 @@
 .d-kanan{
     width: 24.5%;
     float: right;
-    margin: 0 0 0 20px;
-    /* border: 2px solid black  */
+    margin: 0 10px 0 10px;
 }
 
 .k{
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
     /* border: 2px solid cyan; */
-    margin: 20px 20px 0 10px;
     background-color: #fff;
     box-shadow: 0 0 5px grey;
-    height: 40%;
 }
 
 .atas{
@@ -182,8 +188,10 @@
 }
 
 .l{
-    /* border: 2px solid cyan; */
-    margin: 20px 20px 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-top: 20px;
     background-color: #fff;
     box-shadow: 0 0 5px grey;
 }
@@ -237,7 +245,37 @@
     margin: 30px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+    .ini-isi{
+        margin-top: 10%;
+    }
+
+    .d-kiri{
+        padding: 10px;
+    }
+
+    .a1{
+        margin-top: 60px;
+        left: 40%;
+        width: 25%;
+    }
+
+    .a2{
+        left: 40%;
+        margin-top: 60px;
+        display: block;
+        width: 25%;
+    }
+
+    .dul p{
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .par {
+        font-size: 14px;
+    }
     
     .d-kiri{
         margin: 0;
@@ -252,5 +290,6 @@
     .jud{
         font-size: 16px;
         font-weight: 700;
-      }
+    }
+    
 }
