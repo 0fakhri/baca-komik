@@ -308,6 +308,9 @@ footer p{
   .modal-konten{
     margin: 15px;
   }
+  .modal-konten{
+    max-height: 80%;
+  }
 }
 @media screen and (min-heigth: 300px) {
   footer{
