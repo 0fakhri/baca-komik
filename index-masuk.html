@@ -79,13 +79,15 @@
       <div class="bg-modal" id="verif" style="display:none;">
         <div class="modal-konten">
           <div class="tutup" onclick="tutup();">+</div>
-          <h1>verifikasi identitas</h1>
+          <h1>verifikasi identitas kreator</h1>
           <form class="" action="index.html" method="post">
-            <input type="text" name="" id="" placeholder="judul komik"><br>
-            <textarea name="message" style="width:300px; height:100px;" placeholder="deskripsi"></textarea><br>
-            <label for="file" style="padding-top:10px;">gambar cover</label> <br>
+            <input type="text" name="" id="" placeholder="nama lengkap"><br>
+            <input type="text" name="" id="" placeholder="no. Telepon/HP"><br>
+            <input type="text" name="" id="" placeholder="alamat"><br>
+            <input type="date" name="" id=""><br>
+            <label for="file" style="padding-top:10px;">foto selfie dengan ktp</label> <br>
             <input type="file" name="file" id="" > <br>
-            <button type="button" name="button">TAMBAH</button>
+            <button type="button" name="button">verifikasi</button>
           </form>
         </div>
       </div>
@@ -93,12 +95,15 @@
       <div class="bg-modal" id="uang" style="display:none;">
         <div class="modal-konten">
           <div class="tutup" onclick="tutup();">+</div>
-          <h1>topup uang</h1>
+          <h1>Topup Uang</h1>
           <form class="" action="index.html" method="post">
-            <input type="text" name="" id="" placeholder="judul komik"><br>
-            <textarea name="message" style="width:300px; height:100px;" placeholder="deskripsi"></textarea><br>
-            <label for="file" style="padding-top:10px;">gambar cover</label> <br>
-            <input type="file" name="file" id="" > <br>
+            <input type="text" name="" id="" placeholder="nominal uang dalam Rp."><br>
+            <label for="bayar">bayar dengan metode : </label><br>
+            <div>
+              <input type="radio" name="bayar" value="transfer rekening"> Male<br>
+              <input type="radio" name="bayar" value="indoktober"> Female<br>
+              <input type="radio" name="bayar" value="alfaoktober"> Other<br>
+            </div>
             <button type="button" name="button">TAMBAH</button>
           </form>
         </div>
@@ -107,13 +112,15 @@
       <div class="bg-modal" id="profil" style="display:none;">
         <div class="modal-konten">
           <div class="tutup" onclick="tutup();">+</div>
-          <h1>edit profile</h1>
+          <h1>Edit Profil</h1>
           <form class="" action="index.html" method="post">
-            <input type="text" name="" id="" placeholder="judul komik"><br>
-            <textarea name="message" style="width:300px; height:100px;" placeholder="deskripsi"></textarea><br>
-            <label for="file" style="padding-top:10px;">gambar cover</label> <br>
+            <input type="text" name="" id="" placeholder="nama lengkap"><br>
+            <input type="text" name="" id="" placeholder="no. Telepon/HP"><br>
+            <input type="text" name="" id="" placeholder="alamat"><br>
+            <input type="date" name="" id=""><br>
+            <label for="file" style="padding-top:10px;">foto selfie dengan ktp</label> <br>
             <input type="file" name="file" id="" > <br>
-            <button type="button" name="button">TAMBAH</button>
+            <button type="button" name="button">verifikasi</button>
           </form>
         </div>
       </div>
@@ -409,7 +416,7 @@
     <div id="loading">
       <p></p>
     </div>
-    
+
     <script src="js/loading.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/modalBox.js"></script>

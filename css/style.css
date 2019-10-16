@@ -180,14 +180,19 @@ nav #find input{
   position: relative;
 }
 
-.modal-konten  input, .modal-konten textarea{
+.modal-konten >form>input, .modal-konten textarea{
   text-align: center;
   width: 300px;
   margin: 10px 0 10px 0;
   border-radius: 4px;
 }
-.modal-konten  input{
+.modal-konten >form>input{
   height: 40px;
+}
+.modal-konten >form>div{
+  text-align: left;
+  position: relative;
+  left:40%;
 }
 .garis{
   border-bottom: 1px solid grey;
@@ -296,8 +301,14 @@ footer p{
   .konten{
     margin: 100px 10px 20px 10px;
   }
+
 }
 
+@media screen and (max-width: 700px) {
+  .modal-konten{
+    margin: 15px;
+  }
+}
 @media screen and (min-heigth: 300px) {
   footer{
     display: none;
