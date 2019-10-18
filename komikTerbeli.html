@@ -38,15 +38,15 @@
                     <li> <input class="respon" type="text" placeholder="   Cari"> </li>
 
                     <ul id="dropdown"style="display:none">
-                      <li ><a href="" class="biru kecil">akun@gmail.com</a></li> <br>
-                      <li onclick="verif();"><a class="hijau kecil" href="javascript:void(0);">Belum terverifikasi</a></li> <br>
-                      <li class="garis" onclick="uang();"><a class="kecil"  href="javascript:void(0);">Rp. 1000,000 <i class="fa fa-plus-square" aria-hidden="true"></i></a></li><br>
-                      <li><a href="" style="color:black; cursor:default;">komik</a></li> <br>
-                      <li><a class="abu"href="komikSaya.html">komik saya</a></li> <br>
-                      <li><a class="abu"href="komikTerbeli.html">koleksi terbeli</a></li> <br>
-                      <li class="garis" onclick="tambahKomik();"><a href="javascript:void(0);" class="abu"  >tambah komik</a></li> <br>
-                      <li class="garis" onclick="profil();"><a href="javascript:void(0);">Edit Profil</a></li> <br>
-                      <li><a style="color:rgba(255,0,0,0.5);"href="index.html">Logout</a></li>
+                        <li ><a href="" class="biru size18">akun@gmail.com</a></li> <br>
+                        <li onclick="verif();"><a class="hijau size14" href="javascript:void(0);">Belum terverifikasi</a></li> <br>
+                        <li class="garis" onclick="uang();"><a class="size14"  href="javascript:void(0);">Rp. 1,000,000 <i class="fa fa-plus-square" aria-hidden="true"></i></a></li><br>
+                        <li><a href="" style="color:black; cursor:default;">komik</a></li> <br>
+                        <li><a class="abu"href="komikSaya.html">komik saya</a></li> <br>
+                        <li><a class="abu"href="komikTerbeli.html">koleksi terbeli</a></li> <br>
+                        <li class="garis" onclick="tambahKomik();"><a href="javascript:void(0);" class="abu"  >tambah komik</a></li> <br>
+                        <li class="garis" onclick="profil();"><a href="javascript:void(0);">Edit Profil</a></li> <br>
+                        <li><a class="merah"href="index.html">Logout</a></li>
                     </ul>
             </div>
             <div class="clear"></div>
@@ -61,63 +61,70 @@
             </ul>
         </nav>
 
-<!-- modal box -->
-<!-- untuk tambah komik -->
-      <div class="bg-modal" id="tambah" style="display:none;">
-        <div class="modal-konten">
-          <div class="tutup" onclick="tutup();">+</div>
-          <h1>Tambah komik</h1>
-          <form class="" action="index.html" method="post">
-            <input type="text" name="" id="" placeholder="judul komik"><br>
-            <textarea name="message" style="width:300px; height:100px;" placeholder="deskripsi"></textarea><br>
-            <label for="file" style="padding-top:10px;">gambar cover</label> <br>
-            <input type="file" name="file" id="" > <br>
-            <button type="button" name="button">TAMBAH</button>
-          </form>
-        </div>
-      </div>
-<!-- untuk verifikasi -->
-      <div class="bg-modal" id="verif" style="display:none;">
-        <div class="modal-konten">
-          <div class="tutup" onclick="tutup();">+</div>
-          <h1>verifikasi identitas</h1>
-          <form class="" action="index.html" method="post">
-            <input type="text" name="" id="" placeholder="judul komik"><br>
-            <textarea name="message" style="width:300px; height:100px;" placeholder="deskripsi"></textarea><br>
-            <label for="file" style="padding-top:10px;">gambar cover</label> <br>
-            <input type="file" name="file" id="" > <br>
-            <button type="button" name="button">TAMBAH</button>
-          </form>
-        </div>
-      </div>
-<!-- untuk tambah uang -->
-      <div class="bg-modal" id="uang" style="display:none;">
-        <div class="modal-konten">
-          <div class="tutup" onclick="tutup();">+</div>
-          <h1>topup uang</h1>
-          <form class="" action="index.html" method="post">
-            <input type="text" name="" id="" placeholder="judul komik"><br>
-            <textarea name="message" style="width:300px; height:100px;" placeholder="deskripsi"></textarea><br>
-            <label for="file" style="padding-top:10px;">gambar cover</label> <br>
-            <input type="file" name="file" id="" > <br>
-            <button type="button" name="button">TAMBAH</button>
-          </form>
-        </div>
-      </div>
-<!-- untuk edit profil -->
-      <div class="bg-modal" id="profil" style="display:none;">
-        <div class="modal-konten">
-          <div class="tutup" onclick="tutup();">+</div>
-          <h1>edit profile</h1>
-          <form class="" action="index.html" method="post">
-            <input type="text" name="" id="" placeholder="judul komik"><br>
-            <textarea name="message" style="width:300px; height:100px;" placeholder="deskripsi"></textarea><br>
-            <label for="file" style="padding-top:10px;">gambar cover</label> <br>
-            <input type="file" name="file" id="" > <br>
-            <button type="button" name="button">TAMBAH</button>
-          </form>
-        </div>
-      </div>
+        <!-- modal box -->
+        <!-- untuk tambah komik -->
+              <div class="bg-modal" id="tambah" style="display:none;">
+                <div class="modal-konten">
+                  <div class="tutup" onclick="tutup();">+</div>
+                  <h1>Tambah komik</h1>
+                  <form class="" action="index.html" method="post">
+                    <input type="text" name="" id="" placeholder="judul komik"><br>
+                    <textarea name="message" style="width:300px; height:100px;" placeholder="deskripsi"></textarea><br>
+                    <label for="file" style="padding-top:10px;">gambar cover</label> <br>
+                    <input type="file" name="file" id="" > <br>
+                    <button type="button" name="button">TAMBAH</button>
+                  </form>
+                </div>
+              </div>
+        <!-- untuk verifikasi -->
+              <div class="bg-modal" id="verif" style="display:none;">
+                <div class="modal-konten">
+                  <div class="tutup" onclick="tutup();">+</div>
+                  <h1>verifikasi identitas kreator</h1>
+                  <form class="" action="index.html" method="post">
+                    <input type="text" name="" id="" placeholder="nama lengkap"><br>
+                    <input type="text" name="" id="" placeholder="no. Telepon/HP"><br>
+                    <input type="text" name="" id="" placeholder="alamat"><br>
+                    <input type="date" name="" id=""><br>
+                    <label for="file" style="padding-top:10px;">foto selfie dengan ktp</label> <br>
+                    <input type="file" name="file" id="" > <br>
+                    <button type="button" name="button">verifikasi</button>
+                  </form>
+                </div>
+              </div>
+        <!-- untuk tambah uang -->
+              <div class="bg-modal" id="uang" style="display:none;">
+                <div class="modal-konten">
+                  <div class="tutup" onclick="tutup();">+</div>
+                  <h1>Topup Uang</h1>
+                  <form class="" action="index.html" method="post">
+                    <input type="text" name="" id="" placeholder="nominal uang dalam Rp."><br>
+                    <label for="bayar">bayar dengan metode : </label><br>
+                    <div>
+                      <input type="radio" name="bayar" value="transfer rekening"> transfer rekening<br>
+                      <input type="radio" name="bayar" value="indoktober"> indoktober<br>
+                      <input type="radio" name="bayar" value="alfaoktober"> alfaoktober<br>
+                    </div>
+                    <button type="button" name="button">TAMBAH</button>
+                  </form>
+                </div>
+              </div>
+        <!-- untuk edit profil -->
+              <div class="bg-modal" id="profil" style="display:none;">
+                <div class="modal-konten">
+                  <div class="tutup" onclick="tutup();">+</div>
+                  <h1>Edit Profil</h1>
+                  <form class="" action="index.html" method="post">
+                    <input type="text" name="" id="" placeholder="nama lengkap"><br>
+                    <input type="text" name="" id="" placeholder="no. Telepon/HP"><br>
+                    <input type="text" name="" id="" placeholder="alamat"><br>
+                    <input type="date" name="" id=""><br>
+                    <label for="file" style="padding-top:10px;">foto selfie dengan ktp</label> <br>
+                    <input type="file" name="file" id="" > <br>
+                    <button type="button" name="button">verifikasi</button>
+                  </form>
+                </div>
+              </div>
 
         <!-- KONTEN -->
 
@@ -166,17 +173,6 @@
                     </div>
                     <div class="cover1">
                         <div>
-                            <a href="detail.html">
-                                <img src="img/si juki- cari kerja118.jpg" alt="cover" >
-                                <div>
-                                    <p class="judul">Si Juki</p>
-                                    <p class="episode">Episode 179</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cover1">
-                        <div>
                             <a href="">
                                 <img src="img/si abi118.jpg" alt="cover" >
                                 <div>
@@ -185,17 +181,6 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="cover1">
-                            <div>
-                                <a href="detail.html">
-                                    <img src="img/si juki-keroyokan118.jpg" alt="cover" >
-                                    <div>
-                                        <p class="judul">Si Juki</p>
-                                        <p class="episode">Episode 178</p>
-                                    </div>
-                                </a>
-                            </div>
                     </div>
                     <div class="cover1">
                         <div>
@@ -218,17 +203,6 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="cover1">
-                            <div>
-                                <a href="detail.html">
-                                    <img src="img/si juki-keroyokan118.jpg" alt="cover" >
-                                    <div>
-                                        <p class="judul">Si Juki</p>
-                                        <p class="episode">Episode 178</p>
-                                    </div>
-                                </a>
-                            </div>
                     </div>
                     <div class="clear"></div>
                 </div>
