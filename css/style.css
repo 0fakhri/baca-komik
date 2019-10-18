@@ -15,6 +15,9 @@ body{
   padding: 20px;
   box-shadow: 0 0 5px grey;
 }
+.konten .isi{
+  text-align: center;
+}
 .kanan{
      float:right;
  }
