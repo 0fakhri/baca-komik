@@ -54,7 +54,7 @@
     position: relative;
     bottom: 50px;
     width: 200px;
-    /* border: 2px solid blueviolet; */
+    border: 2px solid blueviolet;
     display: inline-block;
 
 }
