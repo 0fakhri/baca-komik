@@ -15,9 +15,7 @@ body{
   padding: 20px;
   box-shadow: 0 0 5px grey;
 }
-.konten .isi{
-  text-align: center;
-}
+
 .kanan{
      float:right;
  }
@@ -28,7 +26,7 @@ body{
   color: #2196F3;
 }
 div.clear {
-    clear: both;
+  clear: both;
   }
 
 /* navbar  */
@@ -53,7 +51,8 @@ nav ul {
     box-shadow: 0 4px 7px rgba(0,0,0,0.5);
   }
 nav li input{
-      margin:15px 10px;
+  width: 30%;
+  margin:15px 10px;
   }
 nav li a {
     display: block;
