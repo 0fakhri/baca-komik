@@ -43,7 +43,7 @@
               <a class="respon" href="terbaru.html">TERBARU</a>
             </div>
             <div id="find" style="display:none;"  class="bar">
-              <input class="respon" type="text" placeholder="   Cari">
+              <input  class="respon" type="text" placeholder="   Cari">
             </div>
             </ul>
         </nav>
@@ -52,14 +52,14 @@
     <div class="konten">
       <form action="">
         <h1>DAFTAR</h1><br>
-        <input type="password" name="" placeholder="Masukkan kata sandi"  id="pass"><br>
-        <input type="password" name="" id="pass2" placeholder="Konfirmasi kata sandi"><br>
+        <input onkeyup="validasi();" type="password" name="" placeholder="Masukkan kata sandi"  id="pass"><br>
+        <input onkeyup="validasi2();" type="password" name="" id="pass2" placeholder="Konfirmasi kata sandi"><br>
         <p style="display:none;color:red;" id="samain">*konfirmasi password tidak sama</p>
         <p style="display:none;color:red;" id="panjangPendek">*password panjangnya harus 5 sampai 12 karakter</p>
         <p style="display:none;color:red;" id="kKecil">*password harus memiliki 1 karakter huruf kecil</p>
         <P style="display:none; color:red;" id="kBesar">*password harus memiliki 1 karakter huruf besar</P>
         <p style="display:none;color:red;" id="kAngka">*password harus memiliki 1 karakter angka</p>
-        <button type="button" name="button" onclick="validasi();">Daftar</button>
+        <button type="button" name="button" onclick="lanjut();">Daftar</button>
       </form>
     </div>
 
@@ -77,7 +77,7 @@
     <div id="loading">
       <p></p>
     </div>
-    
+
     <script src="js/loading.js"></script>
     <script src="js/validasi_daftar2.js" charset="utf-8"></script>
     <script src="js/navbar.js"></script>

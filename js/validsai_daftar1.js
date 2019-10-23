@@ -1,6 +1,7 @@
+var isEmail = false;
 function validasi(){
   var cek = document.getElementById("mymail");
-  var isEmail = false;
+  isEmail = false;
   for (var i = 0; i < cek.value.length; i++){
       var ch = cek.value.charAt(i);
       if(ch == "@"){
@@ -13,7 +14,9 @@ function validasi(){
   } else{
     document.getElementById("email").style.display = "none";
   }
+}
   //lanjut ke halaman selanjutnya
+function lanjut(){
   if(isEmail==true){
     window.location.href = "daftar2.html";
   }
