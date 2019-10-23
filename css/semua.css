@@ -23,13 +23,12 @@
   width: 100%;
   box-sizing: border-box;
   padding: 20px;
-  text-align: center;
 }
 
 .cover1{
   padding: 10px;
   margin: 10px 10px 10px 10px;
-  float: left;
+  display: inline-block;
 }
 
 .cover1:hover{
