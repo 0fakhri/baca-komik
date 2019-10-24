@@ -59,6 +59,7 @@ body{
 }
 
 .konten img{
+    width: 75%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -67,4 +68,10 @@ body{
 /* hover */
 .seb a:hover{
     text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    .konten{
+        width: 100%;
+    }
 }
