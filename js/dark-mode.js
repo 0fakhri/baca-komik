@@ -1,7 +1,20 @@
+window.console = window.console || function(t) {};
+var isdark;
 
-var isdark = false;
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        document.getElementById("dark-mode").style.background = "#444";
+        isdark =true;
+    } else {
+      document.getElementById("dark-mode").style.background = "#ccc";
+      isdark = false;
+    }
+}
 function toggleDarkLight(){
-  console.log(isdark);
+  console.log(!isdark);
   if (isdark){
       document.documentElement.setAttribute('data-theme', 'light');
       document.getElementById("dark-mode").style.background = "#ccc";
