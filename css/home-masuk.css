@@ -62,7 +62,7 @@
   margin: 100px 40px 40px 40px;
   display: block;
   /* border: 2px solid cyan; */
-  background-color: rgba(0,0,0,0);
+  background-color: var(--bg-color);
   box-shadow: none;
 }
 
@@ -110,7 +110,7 @@
 
 .isi{
   /* width: 100%; */
-  background-color:#fff;
+  background-color:var(--bg-color);
   /* border: 2px solid blue; */
   margin-bottom: 40px;
   box-shadow: 0 0 5px grey;
@@ -186,7 +186,7 @@
 
 .kanan1{
   width: 100%;
-  background-color: #fff;
+  background-color: var(--bg-color);
   /* border: 2px solid black; */
   margin-bottom: 40px;
   box-shadow: 0 0 5px grey;

@@ -33,7 +33,6 @@
                 <i  style="margin-top:10px; color:#2095F2;" class="fa fa-user-circle fa-3x" aria-hidden="true" onclick="drop();"></i>
                 <i class="fa fa-caret-down" aria-hidden="true" onclick="drop();" style="color:#2095F2;" ></i>
                 <li> <input class="respon" type="text" placeholder="   Cari"> </li>
-
                 <ul id="dropdown"style="display:none">
                     <li ><a href="" class="biru size18">akun@gmail.com</a></li> <br>
                     <li onclick="verif();"><a class="hijau size14" href="javascript:void(0);">Belum terverifikasi</a></li> <br>
@@ -42,6 +41,7 @@
                     <li><a class="abu"href="komikSaya.html">komik saya</a></li> <br>
                     <li><a class="abu"href="komikTerbeli.html">koleksi terbeli</a></li> <br>
                     <li class="garis" onclick="tambahKomik();"><a href="javascript:void(0);" class="abu"  >tambah komik</a></li> <br>
+                    <li class="garis" onclick=""><a href="javascript:void(0);">dark mode</a></li> <br>
                     <li class="garis" onclick="profil();"><a href="javascript:void(0);">Edit Profil</a></li> <br>
                     <li><a class="merah"href="index.html">Logout</a></li>
                 </ul>
@@ -414,10 +414,14 @@
     <div id="loading">
       <p></p>
     </div>
+    <button style="display: fixed; bottom: 0; right:0;" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+
 
     <script src="js/loading.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/modalBox.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/dark-mode.js"></script>
+
   </body>
 </html>
