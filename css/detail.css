@@ -30,6 +30,7 @@
     margin: -150px 0 0 0;
     background-color: #fff;
     box-shadow: 0 0 5px grey;
+    display: flex;
 }
 
 .a1{
@@ -37,7 +38,6 @@
     z-index: 2;
     /* border: 2px solid black; */
     width: 280px;
-    display: inline-block;
     background-color: #fff
 }
 
@@ -51,12 +51,9 @@
 }
 
 .a2{
+    padding: 200px 0 0 20px;
     position: relative;
-    bottom: 50px;
     width: 200px;
-    border: 2px solid blueviolet;
-    display: inline-block;
-
 }
 
 .dul{
@@ -141,6 +138,15 @@
     display: inline
 }
 
+.cc a{
+    text-decoration: none;
+    color: black;
+}
+
+.cc a:hover{
+    color: #2095F2;
+}
+
 .d-kanan{
     box-sizing: border-box;
     padding: 10px;
@@ -200,6 +206,11 @@
 .kk-isi a{
     text-decoration: none;
     width: 100%;
+    display: flex;
+}
+
+.lol{
+    margin: 10px;
 }
 
 .l{
@@ -216,7 +227,8 @@
     padding: 5px;
 }
 
-.ll a{
+.lo a{
+    display: flex;
     text-decoration: none;
 }
 

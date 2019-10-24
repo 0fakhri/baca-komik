@@ -45,10 +45,10 @@
         </ul>
     </nav>
 
-    <div class="bg-modal" id="beli" style="display:none;">
+    <div class="bg-modal" id="beli" style="display: none">
         <div class="modal-konten">
             <div class="tutup" onclick="tutup();">+</div>
-            <h1>Edit Profil</h1>
+            <h1>Beli</h1>
             <form class="" action="" method="post">
                 <input type="text" name="" id="" placeholder="nama lengkap"><br>
                 <input type="text" name="" id="" placeholder="no. Telepon/HP"><br>
@@ -93,9 +93,10 @@
                         <li>Di dunia yang penuh makhluk super yang bisa ia kalahkan, Saitama mendambakan untuk menemukan lawan yang layak.</li>
                         <li>Dia juga kehilangan seluruh rambutnya karena latihan yang ekstensif, jadi dia bosan dan botak. Sangat tragis.</li>
                         <li>Saitama dapat melumpuhkan siapa saja dan apa pun hanya dengan satu pukulan.</li>
+                        <li id="banyak" style="display: none;">Genre    : Komedi</li>
                     </ul>
                 </div>
-                <div class="btn-banyak">
+                <div class="btn-banyak" href="javascript:void(0);" onclick="show()">
                     <a href="">Tampilkan lebih banyak</a>
                     <i class="fa fa-caret-down" aria-hidden="true"></i>
                 </div>
@@ -104,9 +105,9 @@
             <div class="c"> <!-- gawe tulisan chapter e-->
                 <h3>Episode</h3>
                 <div class="cc">
-                    <p>Episode 179</p>
-                    <p>|</p>
-                    <P>Keroyokan</P>
+                    <a href="view.html"><p>Episode 179</p>
+                        <p>|</p>
+                        <P>Keroyokan</P></a>
                 </div>
                 <div class="cc">
                     <p>Episode 178</p>
@@ -204,13 +205,14 @@
     </div>
     <script src="js/loading.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/lebihBanyak.js"></script>
     <script>
-    function profil() {
-        document.getElementById("beli").style.display = "flex";
-    }
-    function tutup() {
-        document.getElementById("beli").style.display = "none";
-    }
-    </script>
+        function beli() {
+            document.getElementById("beli").style.display = "flex";
+        }
+        function tutup() {
+            document.getElementById("beli").style.display = "none";
+        }
+        </script>
 </body>
 </html>

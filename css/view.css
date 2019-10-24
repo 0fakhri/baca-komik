@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+}
+
+.nav{
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.isi{
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin:0;
+    padding: 5px 40px 5px 5px;
+    display: flex;
+}
+
+.logo{
+    float:left;
+    padding: 0 10px;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.seb{
+    display: inline;
+}
+
+.seb a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.seb select{
+    margin-top: 5px;
+    display: block;
+    width: 200px;
+    background-color: none;
+    border: none;
+    height: 25px;
+}
+
+.konten{
+    width: 65%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.konten img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* hover */
+.seb a:hover{
+    text-decoration: underline;
+}

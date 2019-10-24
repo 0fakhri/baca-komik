@@ -222,6 +222,10 @@
   text-align: center;
 }
 
+#banyak{
+  display: none;
+}
+
 .btn-banyak:hover{
   cursor: pointer;
   background-color: #e2e2e2;
@@ -236,29 +240,29 @@
 }
 
 .kanan2-isi{
-  position: relative;
   margin: 10px;
   width: 100%;
   float: left;
+  display: flex;
 }
 
 .num{
   position: relative;
-  top: 0;
-  display: inline-block;
+  display: block;
 }
 
 .kanan2-isi a{
   text-decoration: none;
+  display: flex;
 }
 
 .kanan2-isi img{
-  display: inline-block;
+  display: block;
 }
 
 .lol{
   margin: 0 0 10px 10px;
-  display: inline-block;
+  display: block;
 }
 
 @media screen and (max-width: 800px) {
