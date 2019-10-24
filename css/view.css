@@ -2,6 +2,10 @@ body{
     margin: 0;
 }
 
+#navbar{
+  transition: opacity 0.4s;
+}
+
 .nav{
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.445);
@@ -56,13 +60,16 @@ body{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    margin: 0;
 }
 
-.konten img{
+.konten > img{
     width: 75%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
 }
 
 /* hover */

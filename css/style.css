@@ -1,3 +1,32 @@
+/* dark mode */
+:root {
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+    --bg-img: url("../img/background.png");
+}
+body {
+    background-image: var(--bg-img);
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+    --bg-img: url("../img/background-black.png");
+}
+h1 {
+    color: var(--secondary-color);
+}
+a {
+    color: var(--primary-color);
+}
+
 /* all  */
 *{
   margin: 0;
@@ -5,12 +34,9 @@
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
-body{
-    background-image: url("../img/background.png");
-}
 .konten{
   margin : 100px 40px 40px 40px;
-  background-color: #fff;
+  background-color: var(--bg-color);
   min-height: 475px;
   padding: 20px;
   box-shadow: 0 0 5px grey;
@@ -47,7 +73,7 @@ nav ul {
     margin:0;
     overflow: hidden;
     padding:0 40px;
-    background-color: #fff;
+    background-color: var(--bg-color);
     box-shadow: 0 4px 7px rgba(0,0,0,0.5);
   }
 nav li input{
@@ -176,7 +202,7 @@ nav #find input{
   border-radius: 4px;
   width: 500px;
   height: 600px;
-  background-color: white;
+  background-color: var(--bg-color);
   text-align: center;
   padding: 20px;
   position: relative;
@@ -188,7 +214,7 @@ nav #find input{
   border-radius: 4px;
   width: 500px;
   height: 300px;
-  background-color: #fff;
+  background-color: var(--bg-color);
 }
 
 .modal-konten >form>input, .modal-konten textarea{
@@ -353,8 +379,8 @@ footer p{
   z-index: 100;
 
   position: fixed;
-  right: 50%;
-  bottom: 50%;
+  left: 50%;
+  top: 50%;
   transform: translateX(-50%);
   transform: translateY(-50%);
 
