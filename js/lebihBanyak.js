@@ -1,10 +1,9 @@
-var z = document.getElementById("banyak");
 function show() {
   console.log("klik");
-    if (z.style.display == "none") {
-      z.style.display = "block";
+    if (document.getElementById("banyak").style.display == "block") {
+      document.getElementById("banyak").style.display = "none";
     } 
     else {
-      z.style.display = "none";
+      document.getElementById("banyak").style.display = "block";
     }
   }

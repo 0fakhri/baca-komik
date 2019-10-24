@@ -125,7 +125,7 @@
 
 
 <!-- KONTEN -->
-<div class="konten" onclick="closeDrop();">
+<div class="konten" style="background: none;"onclick="closeDrop();">
         <div class="main-kiri">
             <div class="isi">
                 <div class="isi2">
@@ -352,10 +352,17 @@
                                 <li><a href="">Komedi</a></li>
                                 <li><a href="">Petualangan</a></li>
                             </ul>
+                            <ul id="banyak" style="display: none;">
+                                <li><a href="">Aksi</a></li>
+                                <li><a href="">Drama</a></li>
+                                <li><a href="">Horor</a></li>
+                                <li><a href="">Komedi</a></li>
+                                <li><a href="">Petualangan</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="btn-banyak">
-                        <a href="">Tampilkan lebih banyak</a>
+                    <div class="btn-banyak" onclick="show()">
+                        <a href="javascript:void(0)">Tampilkan lebih banyak</a>
                         <i class="fa fa-caret-down" aria-hidden="true"></i>
                     </div>
                 </div>
@@ -421,6 +428,7 @@
     <script src="js/modalBox.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/dark-mode.js"></script>
+    <script src="js/lebihBanyak.js"></script>
 
   </body>
 </html>
