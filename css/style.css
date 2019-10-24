@@ -182,6 +182,15 @@ nav #find input{
   position: relative;
 }
 
+.pop-konten{
+  padding-top: 50px;
+  text-align: center;
+  border-radius: 4px;
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+}
+
 .modal-konten >form>input, .modal-konten textarea{
   text-align: center;
   width: 300px;
@@ -222,6 +231,19 @@ nav #find input{
 }
 .icon{
   display: none;
+}
+
+.btn-masuk{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;;
+  padding: 10px;;
+  border-radius: 4px;
+  background-color: #2196F3;
+  box-shadow: 0 3px 6px #2095F2;
 }
 
 @media screen and (max-width: 920px) {

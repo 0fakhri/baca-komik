@@ -222,10 +222,6 @@
   text-align: center;
 }
 
-#banyak{
-  display: none;
-}
-
 .btn-banyak:hover{
   cursor: pointer;
   background-color: #e2e2e2;

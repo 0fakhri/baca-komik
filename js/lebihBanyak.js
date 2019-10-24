@@ -1,6 +1,7 @@
 var z = document.getElementById("banyak");
 function show() {
-    if (z.style.display === "none") {
+  console.log("klik");
+    if (z.style.display == "none") {
       z.style.display = "block";
     } 
     else {
