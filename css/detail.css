@@ -30,7 +30,6 @@
     margin: -150px 0 0 0;
     background-color: #fff;
     box-shadow: 0 0 5px grey;
-    display: flex;
 }
 
 .a1{
@@ -38,6 +37,7 @@
     z-index: 2;
     /* border: 2px solid black; */
     width: 280px;
+    display: inline-block;
     background-color: #fff
 }
 
@@ -51,9 +51,12 @@
 }
 
 .a2{
-    padding: 200px 0 0 20px;
     position: relative;
+    bottom: 50px;
     width: 200px;
+    /* border: 2px solid blueviolet; */
+    display: inline-block;
+
 }
 
 .dul{
