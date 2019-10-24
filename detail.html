@@ -19,98 +19,112 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-        <nav class="topnav" id="myTopnav">
-            <ul>
-                <div class="kiri">
-                    <li><a href="javascript:void(0);" class="icon" onclick="bar()"> <i class="fa fa-bars"></i></a>
-                    </li>
-                    <li><a href="index.html" ><img class="logo" src="img/BACA KOMIK ICON.png" alt=""></a></li>
-                    <li><a class="respon"href="index.html" class="active">BERANDA</a> </li>
-                    <li><a class="respon"href="semua.html">SEMUA KOMIK</a> </li>
-                    <li><a class="respon" href="terbaru.html">TERBARU</a></li>
-                </div>
+    <nav class="topnav" id="myTopnav">
+        <ul>
+            <div class="kiri">
+                <li><a href="javascript:void(0);" class="icon" onclick="bar()"> <i class="fa fa-bars"></i></a></li>
+                <li><a href="index.html" ><img class="logo" src="img/BACA KOMIK ICON.png" alt=""></a></li>
+                <li><a class="respon"href="index.html" class="active">BERANDA</a> </li>
+                <li><a class="respon"href="semua.html">SEMUA KOMIK</a> </li>
+                <li><a class="respon" href="terbaru.html">TERBARU</a></li>
+            </div>
             <div class="kanan">
-                    <li><a href="javascript:void(0);" class="icon" onclick="find()"> <i class="fa fa-search" aria-hidden="true"></i> </a>
-                    </li>
-                    <li> <input class="respon" type="text" placeholder="   Cari"> </li>
-                    <a  href="masuk.html"> MASUK</a>
+                <li><a href="javascript:void(0);" class="icon" onclick="find()"> <i class="fa fa-search" aria-hidden="true"></i> </a></li>
+                <li> <input class="respon" type="text" placeholder="   Cari"> </li>
+                <a  href="masuk.html"> MASUK</a>
             </div>
             <div class="clear"></div>
             <div id="bar" style="display:none;"  class="bar">
-              <a class="respon"href="index.html" class="active">BERANDA</a>
-              <a class="respon"href="semua.html">SEMUA KOMIK</a>
-              <a class="respon" href="terbaru.html">TERBARU</a>
+                <a class="respon"href="index.html" class="active">BERANDA</a>
+                <a class="respon"href="semua.html">SEMUA KOMIK</a>
+                <a class="respon" href="terbaru.html">TERBARU</a>
             </div>
             <div id="find" style="display:none;"  class="bar">
-              <input class="respon" type="text" placeholder="   Cari">
+                <input class="respon" type="text" placeholder="   Cari">
             </div>
-            </ul>
-        </nav>
+        </ul>
+    </nav>
 
+    <div class="bg-modal" id="beli" style="display:none;">
+        <div class="modal-konten">
+            <div class="tutup" onclick="tutup();">+</div>
+            <h1>Edit Profil</h1>
+            <form class="" action="" method="post">
+                <input type="text" name="" id="" placeholder="nama lengkap"><br>
+                <input type="text" name="" id="" placeholder="no. Telepon/HP"><br>
+                <input type="text" name="" id="" placeholder="alamat"><br>
+                <input type="date" name="" id=""><br>
+                <label for="file" style="padding-top:10px;">foto selfie dengan ktp</label> <br>
+                <input type="file" name="file" id="" > <br>
+                <button type="button" name="button">verifikasi</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- konten -->
     <section class="ini-isi"> <!-- opo div enake  ? -->
         <div class="g">
             <img style="z-index: -10" src="img/banner sijuki keroyokan 3.jpg" alt="">   <!-- gambar cover banner komik -->
         </div>
-
-            <div class="d-kiri">
-                <div class="a"> <!-- gawe cover komik e -->
-                    <div class="a1">
-                        <div class="aa1">
-                            <img src="img/si juki-keroyokan250.jpg" alt="">  <!-- cover komik -->
-                        </div>
-                    </div>
-                    <div class="a2">
-                        <div class="dul">
-                            <p>Si Juki</p>
-                        </div> <!-- gawe judul komik dll -->
-                        <div class="par"><p>Faza Meonk</p><!-- penulis -->
-                            <p>Bersambung | 179 Episode</p><!-- ongoing -->
-                        </div>
-                        <div class="btn-beli">
-                            <a href="detailBeli.html">Beli</a>
-                        </div>
+        <div class="d-kiri">
+            <div class="a"> <!-- gawe cover komik e -->
+                <div class="a1">
+                    <div class="aa1">
+                        <img src="img/si juki-keroyokan250.jpg" alt="">  <!-- cover komik -->
                     </div>
                 </div>
-
-                <div class="b"> <!-- gawe deskripsi-->
-                    <div class="isi-b">
-                        <h3>Deskripsi</h3  >
-                            <ul>
-                                <li>Di dunia yang penuh makhluk super yang bisa ia kalahkan, Saitama mendambakan untuk menemukan lawan yang layak.</li>
-                                <li>Dia juga kehilangan seluruh rambutnya karena latihan yang ekstensif, jadi dia bosan dan botak. Sangat tragis.</li>
-                                <li>Saitama dapat melumpuhkan siapa saja dan apa pun hanya dengan satu pukulan.</li>
-                            </ul>
-                        </div>
-                    <div class="btn-banyak">
-                        <a href="">Tampilkan lebih banyak</a>
-                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                <div class="a2">
+                    <div class="dul">
+                        <p>Si Juki</p>
+                    </div> <!-- gawe judul komik dll -->
+                    <div class="par"><p>Faza Meonk</p><!-- penulis -->
+                        <p>Bersambung | 179 Episode</p><!-- ongoing -->
                     </div>
-                </div>
-
-                <div class="c"> <!-- gawe tulisan chapter e-->
-                    <h3>Episode</h3>
-                    <div class="cc">
-                        <p>Episode 179</p>
-                        <p>|</p>
-                        <P>Keroyokan</P>
-                    </div>
-                    <div class="cc">
-                        <p>Episode 178</p>
-                        <p>|</p>
-                        <P>Cari kerja</P>
-                    </div>
-                    <div class="cc">
-                        <p>Episode 176</p>
-                        <p>|</p>
-                        <P>Kemenangan</P>
-                    </div>
-                    <div class="cc">
-                        <p>Episode 176</p>
-                        <p>|</p>
-                        <P>Kemenangan</P>
+                    <div class="btn-beli" href="javascript:void(0);" onclick="beli()">
+                        <a href="javascript:void(0);" onclick="beli()">Beli</a>
                     </div>
                 </div>
             </div>
+
+            <div class="b"> <!-- gawe deskripsi-->
+                <div class="isi-b">
+                    <h3>Deskripsi</h3  >
+                    <ul>
+                        <li>Di dunia yang penuh makhluk super yang bisa ia kalahkan, Saitama mendambakan untuk menemukan lawan yang layak.</li>
+                        <li>Dia juga kehilangan seluruh rambutnya karena latihan yang ekstensif, jadi dia bosan dan botak. Sangat tragis.</li>
+                        <li>Saitama dapat melumpuhkan siapa saja dan apa pun hanya dengan satu pukulan.</li>
+                    </ul>
+                </div>
+                <div class="btn-banyak">
+                    <a href="">Tampilkan lebih banyak</a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="c"> <!-- gawe tulisan chapter e-->
+                <h3>Episode</h3>
+                <div class="cc">
+                    <p>Episode 179</p>
+                    <p>|</p>
+                    <P>Keroyokan</P>
+                </div>
+                <div class="cc">
+                    <p>Episode 178</p>
+                    <p>|</p>
+                    <P>Cari kerja</P>
+                </div>
+                <div class="cc">
+                    <p>Episode 176</p>
+                    <p>|</p>
+                    <P>Kemenangan</P>
+                </div>
+                <div class="cc">
+                    <p>Episode 176</p>
+                    <p>|</p>
+                    <P>Kemenangan</P>
+                </div>
+            </div>
+        </div>
 
         <div class="d-kanan">
             <div class="k">
@@ -175,20 +189,28 @@
  <!-- FOOTER -->
  <div class="clear"></div>
 
- <footer>
-     <div>
-         <a href="tentangKami.html">Tentang Kami</a>
-         <a href="ketentuanLayanan.html">Ketentuan Layanan</a>
-         <a href="dukunganPelanggan.html">Dukungan Pelanggan</a>
-     </div>
-     <div>
-         <p>© 2019</p>
-     </div>
- </footer>
- <div id="loading">
-   <p></p>
- </div>
- <script src="js/loading.js"></script>
- <script src="js/navbar.js"></script>
+    <footer>
+        <div>
+            <a href="tentangKami.html">Tentang Kami</a>
+            <a href="ketentuanLayanan.html">Ketentuan Layanan</a>
+            <a href="dukunganPelanggan.html">Dukungan Pelanggan</a>
+        </div>
+        <div>
+            <p>© 2019</p>
+        </div>
+    </footer>
+    <div id="loading">
+        <p></p>
+    </div>
+    <script src="js/loading.js"></script>
+    <script src="js/navbar.js"></script>
+    <script>
+    function profil() {
+        document.getElementById("beli").style.display = "flex";
+    }
+    function tutup() {
+        document.getElementById("beli").style.display = "none";
+    }
+    </script>
 </body>
 </html>
