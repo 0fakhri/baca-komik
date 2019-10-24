@@ -55,19 +55,16 @@ body{
     height: 25px;
 }
 
-.konten{
-    width: 65%;
+.kontenn{
+    width: 100%;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
     margin: 0;
 }
 
-.konten > img{
-    width: 75%;
+.kontenn > img{
+    width: 65%;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     margin: 0;
     padding: 0;
 }

@@ -62,12 +62,10 @@
         <div class="modal-konten">
             <div class="tutup" onclick="tutup();">+</div>
             <h1>Beli</h1>
-            <form class="" action="index.html" method="post">
-                <input type="text" name="" id="" placeholder="judul komik"><br>
-                <textarea name="message" style="width:300px; height:100px;" placeholder="deskripsi"></textarea><br>
-                <label for="file" style="padding-top:10px;">gambar cover</label> <br>
-                <input type="file" name="file" id="" > <br>
-                <button type="button" name="button">TAMBAH</button>
+            <p>Jumlah uang  Rp 1.000.000</p>
+            <p>Harga Rp 250.000</p>
+            <form class="" action="detail-masuk.html" method="post">
+                <button type="button" name="button">BELI</button>
             </form>
         </div>
     </div>
@@ -217,6 +215,7 @@
     <script src="js/loading.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/lebihBanyak.js"></script>
+    <script src="js/modalBox.js"></script>
     <script>
         function beli() {
             document.getElementById("beli").style.display = "flex";
