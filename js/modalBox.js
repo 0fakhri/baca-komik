@@ -20,7 +20,7 @@ function uang() {
     document.getElementById("uang").style.display = "flex";
     }
 function profil() {
-    document.getElementById("profil").style.display = "flex";
+    document.getElementById("profil").style.display = "block";
     }
 function tutup() {
     document.getElementById("tambah").style.display = "none";
