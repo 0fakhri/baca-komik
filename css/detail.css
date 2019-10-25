@@ -28,7 +28,7 @@
     /* border: 2px solid red; */
     width: 100%;
     margin: -150px 0 0 0;
-    background-color: #fff;
+    background-color: var(--bg-color);
     box-shadow: 0 0 5px grey;
 }
 
@@ -38,7 +38,7 @@
     /* border: 2px solid black; */
     width: 280px;
     display: inline-block;
-    background-color: #fff
+    background-color: var(--bg-color);
 }
 
 .aa1{
@@ -82,7 +82,7 @@
 
 .b{
     /* border: 1px solid #fff; */
-    background-color: #fff;
+    background-color: var(--bg-color);
     width: 100%;
     margin: 30px 0 0 0px;
     box-shadow: 0 0 5px grey;
@@ -113,7 +113,7 @@
   }
   
   .btn-banyak:hover{
-    background-color: #e2e2e2;
+    background-color: var(--hovv);
     cursor: pointer;
   }
   .btn-banyak i{
@@ -122,7 +122,7 @@
   
 .c{
     padding: 10px;
-    background-color: #fff;
+    background-color: var(--bg-color);
     width: 100%;
     margin: 30px 0 0 0;
     box-shadow: 0 0 5px grey;
@@ -162,7 +162,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
-    background-color: #fff;
+    background-color: var(--bg-color);
     box-shadow: 0 0 5px grey;
 }
 
@@ -221,7 +221,7 @@
     box-sizing: border-box;
     padding: 10px;
     margin-top: 20px;
-    background-color: #fff;
+    background-color: var(--bg-color);
     box-shadow: 0 0 5px grey;
 }
 
@@ -235,19 +235,21 @@
     text-decoration: none;
 }
 
+/* JUDUL , PENGARANG , EPISODE */
+
 .judul{
-    color: black;
+    color: var(--judul);
     font-size: 16px;
     font-weight: 700;
   }
 
   .episode{
-    color: black;
+    color: var(--episode);
     font-size: 16px;
   }
 
   .pengarang{
-    color: black;
+    color: var(--pengarang);
     font-size: 16px;
   }
 

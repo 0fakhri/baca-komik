@@ -5,7 +5,7 @@
 
 .atas{
   height: 53px;
-  background-color: #eeeeee;
+  background-color: var(--atas);
   width: 100%;
   text-align: right;
 }
@@ -32,21 +32,23 @@
 }
 
 .cover1:hover{
-  background-color: #e2e2e2;
+  background-color: var(--hovv);
 }
 
 .cover1 a{
   text-decoration: none;
 }
 
+/* JUDUL , EPISODE */
+
 .judul{
-  color: black;
+  color: var(--judul);
   font-size: 16px;
   font-weight: 700;
 }
 
 .episode{
-  color: black;
+  color: var(--episode);
   font-size: 16px;
 }
 
