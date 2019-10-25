@@ -393,10 +393,8 @@ footer p{
   z-index: 100;
 
   position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translateX(50%);
-  transform: translateY(50%);
+  left: 45%;
+  top: 45%;
 
   animation: putar 1s linear infinite;
 }
