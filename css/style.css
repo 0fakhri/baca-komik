@@ -274,6 +274,9 @@ nav #find input{
 .merah{
   color: rgba(255,0,0,0.8);
 }
+.kuning{
+  color: yellow;
+}
 .size14{
   font-size: 14px;
 }
