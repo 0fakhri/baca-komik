@@ -135,9 +135,17 @@
       font-weight: 700;
     }
 
+    .judul:hover{
+      color: #2095F2;
+    }
+
     .episode{
       color: var(--episode);
       font-size: 16px;
+    }
+
+    .episode:hover{
+      color: #2095F2;
     }
 
     .pengarang{
@@ -158,7 +166,7 @@
   margin: 0;
 }
 
-.row:nth-child(odd){
+.row:nth-child(even){
   background-color: var(--nth);
 }
 
