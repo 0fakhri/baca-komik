@@ -135,9 +135,17 @@
       font-weight: 700;
     }
 
+    .judul:hover{
+      color: #2095F2;
+    }
+
     .episode{
       color: var(--episode);
       font-size: 16px;
+    }
+
+    .episode:hover{
+      color: #2095F2;
     }
 
     .pengarang{
@@ -158,7 +166,7 @@
   margin: 0;
 }
 
-.row:nth-child(odd){
+.row:nth-child(even){
   background-color: var(--nth);
 }
 
@@ -241,29 +249,35 @@
 }
 
 .kanan2-isi{
-  position: relative;
-  margin: 10px;
+  margin: 10px 0 10px 0 ;
   width: 100%;
   float: left;
+  display: flex;
+}
+
+.kanan2-isi:hover{
+  border-radius: 10px;
+  background-color: var(--hovv);
 }
 
 .num{
+  padding: 50px 10px 0 10px;
   position: relative;
-  top: 0;
-  display: inline-block;
+  display: block;
 }
 
 .kanan2-isi a{
   text-decoration: none;
+  display: flex;
 }
 
 .kanan2-isi img{
-  display: inline-block;
+  display: block;
 }
 
 .lol{
-  margin: 0 0 10px 10px;
-  display: inline-block;
+  margin: 30px 0 10px 10px;
+  display: block;
 }
 
 @media screen and (max-width: 800px) {
