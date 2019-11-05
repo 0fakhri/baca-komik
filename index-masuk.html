@@ -67,7 +67,8 @@
                 <input type="text" name="" id="" placeholder="judul komik"><br>
                 <textarea name="message" style="width:300px; height:100px;" placeholder="deskripsi"></textarea><br>
                 <label for="file" style="padding-top:10px;">gambar cover</label> <br>
-                <input type="file" name="file" id="" > <br>
+                <input type="file" name="file" onchange="readURL(this);"> <br>
+                <img id="blah" src="http://placehold.it/180" alt="your image" /> <br>
                 <button type="button" name="button">TAMBAH</button>
             </form>
         </div>
@@ -83,7 +84,7 @@
                 <input type="text" name="" id="" placeholder="alamat"><br>
                 <input type="date" name="" id=""><br>
                 <label for="file" style="padding-top:10px;">foto selfie dengan ktp</label> <br>
-                <input type="file" name="file" id="" > <br>
+                <input type="file" name="file" id="" onchange="readURL(this);"> <br>
                 <button type="button" name="button">verifikasi</button>
             </form>
         </div>
@@ -430,5 +431,21 @@
     <script src="js/dark-mode.js"></script>
     <script src="js/lebihBanyak.js"></script>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+function readURL(input) {
+     if (input.files && input.files[0]) {
+         var reader = new FileReader();
+
+         reader.onload = function (e) {
+             $('#blah')
+                 .attr('src', e.target.result);
+         };
+
+         reader.readAsDataURL(input.files[0]);
+     }
+ }
+</script>
   </body>
 </html>
