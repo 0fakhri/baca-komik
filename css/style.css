@@ -14,6 +14,7 @@
     --atas:#e2e2e2
 }
 body{
+  color: var(--font-color);
   background-image: var(--bg-img);
    scrollbar-face-color: #EEC800;
    scrollbar-shadow-color: #006cb4;
