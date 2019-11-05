@@ -5,8 +5,11 @@ function readURL(input) {
            var reader = new FileReader();
 
            reader.onload = function (e) {
-               $('#blah')
-                   .attr('src', e.target.result);
+               $('#blah').attr('src', e.target.result);
+               var size = $(".fileSize")[0].files[0].size;
+               size = Math.floor(size/1024)
+               alert(size + "KB")
+
            };
 
            reader.readAsDataURL(input.files[0]);

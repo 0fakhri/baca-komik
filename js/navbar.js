@@ -16,7 +16,7 @@ function bar() {
        y.style.display = "none";
      }
     }
-
+//anjir garai erros... ;v
     // nitip c sementara :v
     function animateValue(id, start, end, duration) {
       var range = end - start;
@@ -32,5 +32,5 @@ function bar() {
           }
       }, stepTime);
     }
-    
+
     animateValue("counter", 0, 1200, 100);
