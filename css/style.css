@@ -14,8 +14,8 @@
     --atas:#e2e2e2
 }
 body{
-  color: var(--font-color);
   background-image: var(--bg-img);
+  color: var(--font-color);
    scrollbar-face-color: #EEC800;
    scrollbar-shadow-color: #006cb4;
    scrollbar-highlight-color:#006cb4;
@@ -71,6 +71,11 @@ a {
 .kiri{
   float: left;
 }
+
+.kiri a img{
+  margin-right: 20px;
+}
+
 .active {
   color: #2196F3;
 }
@@ -115,7 +120,6 @@ nav li a:hover:not(.active) {
     color: #2095F2
   }
 
-
 nav ul li a img.logo{
       float:left;
       width: 70px;
@@ -133,25 +137,50 @@ nav .kanan >  a{
   padding: 10px;;
   border-radius: 4px;
   background-color: #2196F3;
-  box-shadow: 0 3px 6px #2095F2;
-
-
 }
+
+nav .kanan > a:hover{
+  background-color: #fff;
+  color:#2196F3;
+  border: solid 2px #2196F3;
+  padding: 8px;
+}
+
 .kanan ul{
   position: absolute;
   right: 10px;
   top: 60px;
   text-align: left;
-
 }
 nav li input, nav #find input{
   height: 33px;
   width: 300px;
   border-radius: 4px;
+  float:right;
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
+
+.kanan li input:focus{
+  width: 100%;
+}
+
 nav #find input{
   margin-bottom: 10px;
 }
+
+
+  
 
 .kanan > ul > li > a{
   text-align: left;
@@ -166,7 +195,9 @@ nav #find input{
 .kanan > li > input{
   margin-top: 20px;
 }
-
+.kanan > a{
+  font-size:15px;
+}
 /* tambahan untuk dropdown*/
 .kanan > i{
   cursor: pointer;
