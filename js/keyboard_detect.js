@@ -4,7 +4,6 @@ function print_arrow_key(keyCodeNumber) {
         UP = 38,
         RIGHT = 39,
         DOWN = 40;
-
     switch (keyCodeNumber) {
     case LEFT:
         alert('flag{arrow kanan untuk ke halaman admin :) }')
@@ -30,7 +29,6 @@ function checkKeycode(event) {
         keycode = (keyDownEvent.which) ? keyDownEvent.which : keyDownEvent.keyCode;
 
     print_arrow_key(keycode);
-
     return false;
 }
 document.onkeydown = checkKeycode;
