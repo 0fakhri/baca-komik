@@ -218,7 +218,7 @@
   color: #2095F2;
 }
 
-  .slide-up, .slide-down {
+  /* .slide-up, .slide-down {
     max-height: 0;            
     overflow-y: hidden;
     -webkit-transition: max-height 0.5s ease-in-out;
@@ -229,7 +229,11 @@
 
   .slide-down {            
     max-height: 200px;
-  }
+  } */
+
+.hidden-content{
+  display: none;
+}
 
 .btn-banyak a{
   text-decoration: none;
