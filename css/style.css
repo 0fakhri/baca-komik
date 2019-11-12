@@ -216,10 +216,6 @@ nav #find input{
 }
 
 /* modal box */
-.modal-konten{
-  -webkit-animation: slide-down 1s ease-out;
-  -moz-animation: slide-down 1s ease-out;
-}
 .modal-konten button{
   border: none;
   display: inline-block;
@@ -252,13 +248,15 @@ nav #find input{
   position: fixed;
   top: 0;
   z-index: 100;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 .modal-konten{
   border-radius: 4px;
   width: 500px;
   height: 600px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
   background-color: var(--bg-color);
   text-align: center;
   padding: 20px;
@@ -287,11 +285,6 @@ nav #find input{
   text-align: left;
   position: relative;
   left:40%;
-}
-
-#dropdown{
-  -webkit-animation: slide-down .6s ease-out;
-  -moz-animation: slide-down .6s ease-out;
 }
 
 .garis{
