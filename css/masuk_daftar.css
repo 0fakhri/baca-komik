@@ -21,7 +21,7 @@ form input, form button{
 }
 form button{
   background-color: #2196F3;
-  box-shadow: 0 3px 6px #2095F2;
+  /* box-shadow: 0 3px 6px #2095F2; */
   border: 0;
   margin: 10px;
 }
@@ -34,6 +34,7 @@ form button{
 }
 form button:hover{
   cursor:pointer;
+  background-color: rgb(56, 156, 238);
 }
 
 @media screen and (max-width: 400px) {
