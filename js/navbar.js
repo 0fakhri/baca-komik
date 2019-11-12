@@ -1,19 +1,19 @@
-var x = document.getElementById("bar");
-var y = document.getElementById("find");
+var x = $("#bar");
+var y = $("#find");
 function bar() {
-   if (x.style.display === "none") {
-     x.style.display = "block";
-     y.style.display = "none";
+   if (x.css("display") == "none") {
+     x.css("display","block");
+     y.css("display","none");
    } else {
-     x.style.display = "none";
+     x.css("display","none");
    }
   }
   function find() {
-     if (y.style.display === "none") {
-       y.style.display = "block";
-       x.style.display = "none";
+     if (y.css("display") === "none") {
+       y.css("display","block");
+       x.css("display","none");
      } else {
-       y.style.display = "none";
+       y.css("display","none");
      }
     }
 //anjir garai erros... ;v
@@ -23,7 +23,7 @@ function bar() {
     //   var current = start;
     //   var increment = +10;
     //   var stepTime = Math.abs(Math.floor(duration / range));
-    //   var obj = document.getElementById(id);
+    //   var obj = $(id);
     //   var timer = setInterval(function() {
     //       current += increment;
     //       obj.innerHTML = current;

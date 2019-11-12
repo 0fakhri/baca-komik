@@ -1,4 +1,4 @@
-var loading = document.getElementById('loading');
+let loading = $("#loading");
 window.addEventListener('load', function(){
-  loading.style.display = "none";
+  loading.css("display","none");
 });

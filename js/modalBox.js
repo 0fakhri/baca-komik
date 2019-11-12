@@ -1,12 +1,11 @@
-var z = document.getElementById("dropdown");
+
 
 function readURL(input) {
        if (input.files && input.files[0]) {
-           var reader = new FileReader();
-
+           let reader = new FileReader();
            reader.onload = function (e) {
                $('#blah').attr('src', e.target.result);
-               var size = $(".fileSize")[0].files[0].size;
+               let size = $(".fileSize")[0].files[0].size;
                size = Math.floor(size/1024)
                alert(size + "KB")
 
@@ -16,32 +15,36 @@ function readURL(input) {
        }
    }
 
-function drop() {
-     if (z.style.display === "none") {
-       z.style.display = "block";
-     } else {
-       z.style.display = "none";
-     }
-    }
+//fungsi dropdown menu
+
+$(document).ready(function() {
+  $(".kanan>i").click(function(){
+    $("#dropdown").slideToggle();
+  });
+});
 function closeDrop(){
-  z.style.display = "none";
+  if($("#dropdown").css("display") != "none"){
+    $("#dropdown").slideToggle();
+  }
 }
 
+var terbuka;
 function tambahKomik() {
-    document.getElementById("tambah").style.display = "flex";
+    $("#tambah").fadeToggle();
+    terbuka = "#tambah";
     }
 function verif() {
-    document.getElementById("verif").style.display = "flex";
+    $("#verif").fadeToggle();
+    terbuka = "#verif";
     }
 function uang() {
-    document.getElementById("uang").style.display = "flex";
+    $("#uang").fadeToggle();
+    terbuka = "#uang";
     }
 function profil() {
-    document.getElementById("profil").style.display = "block";
+    $("#profil").fadeToggle();
+    terbuka = "#profil";
     }
 function tutup() {
-    document.getElementById("tambah").style.display = "none";
-    document.getElementById("verif").style.display = "none";
-    document.getElementById("uang").style.display = "none";
-    document.getElementById("profil").style.display = "none";
+    $(terbuka).fadeToggle();
     }
