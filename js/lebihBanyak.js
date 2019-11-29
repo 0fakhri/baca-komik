@@ -1,7 +1,7 @@
 var tampilBanyak = false;
 $(document).ready(function() {
   $(".btn-banyak").click(function(){
-    $(".hidden-content").slideToggle();
+    $("#banyak").slideToggle();
     if(tampilBanyak){
       $(".btn-banyak > a").text("Tampilkan lebih banyak");
       tampilBanyak = false;
