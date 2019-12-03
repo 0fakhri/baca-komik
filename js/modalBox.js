@@ -8,9 +8,7 @@ function readURL(input) {
                let size = $(".fileSize")[0].files[0].size;
                size = Math.floor(size/1024)
                alert(size + "KB")
-
            };
-
            reader.readAsDataURL(input.files[0]);
        }
    }
@@ -45,6 +43,10 @@ function profil() {
     $("#profil").fadeToggle();
     terbuka = "#profil";
     }
+function keluarAkun() {
+  $("#keluarAkun").fadeToggle();
+    terbuka = "#keluarAkun";
+  }
 function tutup() {
     $(terbuka).fadeToggle();
     }

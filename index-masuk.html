@@ -42,7 +42,7 @@
                     <li><a class="abu"href="komikTerbeli.html">koleksi terbeli</a></li> <br>
                     <li class="garis" onclick="tambahKomik();"><a href="javascript:void(0);" class="abu"  >tambah komik</a></li> <br>
                     <li class="garis" onclick="profil();"><a href="javascript:void(0);">Edit Profil</a></li> <br>
-                    <li><a class="merah"href="index.html">Logout</a></li>
+                    <li onclick="keluarAkun();"><a class="merah"href="javascript:void(0);">Logout</a></li>
                 </ul>
             </div>
             <div class="clear"></div>
@@ -123,8 +123,14 @@
             </form>
         </div>
     </div>
-
-
+<!-- untuk peringatan keluar akun -->
+    <div class="bg-modal" id="keluarAkun" style="display:none;">
+        <div class="modal-konten" style="max-height: 150px;">
+            <h1>yakin ingin keluar?</h1>
+            <button type="button" name="button" onclick="tutup();">tidak</button>
+            <button type="button" name="button" >ya</button>
+        </div>
+    </div>
 
 <!-- KONTEN -->
 <div class="konten" style="background: none;"onclick="closeDrop();">
