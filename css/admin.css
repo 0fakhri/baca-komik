@@ -50,20 +50,9 @@ a.active{
 
 .kotak{
   box-sizing: border-box;
-  height: 131px;
-  width: 261px;
   display: inline-block;
   margin: 10px 0px 10px 0px;
-  background-color: #bbbbbb;
-  border-radius: 5px;
-}
-
-.kotak:hover{
-  background-color: #000000;
-}
-
-.kotak a{
-  text-decoration: none;
+  padding: 10px;
 }
 
 .kotak p{
@@ -75,7 +64,24 @@ a.active{
 }
 
 .kotak1{
+  border-radius: 5px;
+  height: 131px;
+  width: 261px;
   background-image: url(../img/user.jpg);
+}
+
+.kotak2{
+  border-radius: 5px;
+  height: 131px;
+  width: 261px;
+  background-image: url(../img/transaksi.jpg);
+}
+
+.kotak3{
+  border-radius: 5px;
+  height: 131px;
+  width: 261px;
+  background-image: url(../img/cari.jpg);
 }
 
 table, th, td{
