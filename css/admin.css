@@ -48,6 +48,36 @@ a.active{
   background-color: #595959;
 }
 
+.kotak{
+  box-sizing: border-box;
+  height: 131px;
+  width: 261px;
+  display: inline-block;
+  margin: 10px 0px 10px 0px;
+  background-color: #bbbbbb;
+  border-radius: 5px;
+}
+
+.kotak:hover{
+  background-color: #000000;
+}
+
+.kotak a{
+  text-decoration: none;
+}
+
+.kotak p{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 50px 40px 0 0;
+  float: right;
+}
+
+.kotak1{
+  background-image: url(../img/user.jpg);
+}
+
 table, th, td{
   border: 2px solid black;
   padding: 5px;
