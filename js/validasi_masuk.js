@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var form = $('button');
   kosong = false;
-  
+
 	form.on('click', function (event) {
 		event.preventDefault();
 		var inputan = $(".konten").find("input");
@@ -9,7 +9,6 @@ $(document).ready(function() {
 		inputan.each(function(index, el) {
 			if ($(el).val() == "") {
         console.log('inpus');
-        
         kosong = true;
 			}
 			else{

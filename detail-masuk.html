@@ -31,7 +31,7 @@
             <div class="kanan">
                 <li><a href="javascript:void(0);" class="icon" onclick="find()"> <i class="fa fa-search" aria-hidden="true"></i> </a></li>
                 <i  style="margin-top:10px; color:#2095F2;" class="fa fa-user-circle fa-3x" aria-hidden="true" onclick="drop();"></i>
-                <i class="fa fa-caret-down" aria-hidden="true" onclick="drop();" style="color:#2095F2;" ></i>
+                <i class="fa fa-caret-down" aria-hidden="true" style="color:#2095F2;" ></i>
                 <li> <input class="respon" type="text" placeholder="   Cari"> </li>
 
                 <ul id="dropdown"style="display:none">
@@ -43,7 +43,7 @@
                     <li><a class="abu"href="komikTerbeli.html">koleksi terbeli</a></li> <br>
                     <li class="garis" onclick="tambahKomik();"><a href="javascript:void(0);" class="abu"  >tambah komik</a></li> <br>
                     <li class="garis" onclick="profil();"><a href="javascript:void(0);">Edit Profil</a></li> <br>
-                    <li><a class="merah"href="index.html">Logout</a></li>
+                    <li onclick="keluarAkun();"><a class="merah"href="javascript:void(0);">Logout</a></li>
                 </ul>
             </div>
             <div class="clear"></div>
@@ -69,9 +69,17 @@
             </form>
         </div>
     </div>
+    <!-- untuk peringatan keluar akun -->
+        <div class="bg-modal" id="keluarAkun" style="display:none;">
+            <div class="modal-konten" style="max-height: 150px;">
+                <h1>yakin ingin keluar?</h1>
+                <button type="button" name="button" onclick="tutup();">tidak</button>
+                <button type="button" name="button" onclick="signout();">ya</button>
+            </div>
+        </div>
 
     <!-- konten -->
-    <section class="ini-isi"> <!-- opo div enake  ? -->
+    <section class="ini-isi" onclick="closeDrop();"> <!-- opo div enake  ? -->
         <div class="g">
             <img style="z-index: -10" src="img/banner sijuki keroyokan 3.jpg" alt="">   <!-- gambar cover banner komik -->
         </div>
@@ -228,6 +236,9 @@
         }
         function tutup() {
             document.getElementById("beli").style.display = "none";
+        }
+        function signout(){
+          window.location.href = "detail.html";
         }
         </script>
 </body>

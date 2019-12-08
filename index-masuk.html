@@ -42,7 +42,7 @@
                     <li><a class="abu"href="komikTerbeli.html">koleksi terbeli</a></li> <br>
                     <li class="garis" onclick="tambahKomik();"><a href="javascript:void(0);" class="abu"  >tambah komik</a></li> <br>
                     <li class="garis" onclick="profil();"><a href="javascript:void(0);">Edit Profil</a></li> <br>
-                    <li onclick="keluarAkun();"><a class="merah"href="javascript:void(0);">Logout</a></li>
+                    <li  onclick="keluarAkun(); "><a class="merah"href="javascript:void(0);">Logout</a></li>
                 </ul>
             </div>
             <div class="clear"></div>
@@ -128,7 +128,7 @@
         <div class="modal-konten" style="max-height: 150px;">
             <h1>yakin ingin keluar?</h1>
             <button type="button" name="button" onclick="tutup();">tidak</button>
-            <button type="button" name="button" >ya</button>
+            <button type="button" name="button" onclick="signout();">ya</button>
         </div>
     </div>
 
@@ -430,7 +430,6 @@
     </div>
     <button id="dark-mode"style="cursor: pointer; border-radius: 50%; background:#ccc;width: 40px; height: 40px; position: fixed; bottom: 20px; right:20px;" type="button" name="dark_light" title="Toggle dark/light mode">🌛</button>
 
-
     <script src="js/jquery/jquery-3.4.1.min.js"></script>
     <script src="js/loading.js"></script>
     <script src="js/navbar.js"></script>
@@ -438,5 +437,11 @@
     <script src="js/slider.js"></script>
     <script src="js/dark-mode.js"></script>
     <script src="js/lebihBanyak.js"></script>
+
+    <script type="text/javascript">
+      function signout(){
+        window.location.href = "index.html";
+      }
+    </script>
   </body>
 </html>
