@@ -6,13 +6,13 @@ body{
   user-select: none;
 }
 
-.content{
+.content, .content2{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.content{
+.content, .content2{
   z-index: 101;
   opacity: 0;
   visibility: hidden;
@@ -23,19 +23,25 @@ body{
   transition: .3s ease-in;
   box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
 }
-.header{
+.header, .header2{
   height: 68px;
-  background: #27ae60;
+
   overflow: hidden;
   border-radius: 3px 3px 0 0;
   box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
 }
-.header h2{
+.header{
+  background: #27ae60;
+}
+.header2{
+  background: red;
+}
+.header h2, .header2 h2{
   color: white;
   padding-left: 32px;
   font-weight: normal;
 }
-.fa-times{
+.header > .fa-times, .header2 > .fa-times{
   position: absolute;
   right: 20px;
   top: 20px;
@@ -51,6 +57,19 @@ body{
   height: 80px;
   width: 80px;
   border: 2px solid #27ae60;
+  text-align: center;
+  padding-top: 13px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin: 30px 0 0 160px;
+}
+#kedua{
+  font-size: 50px;
+  color: red;
+  font-weight: bold;
+  height: 80px;
+  width: 80px;
+  border: 2px solid red;
   text-align: center;
   padding-top: 13px;
   border-radius: 50%;
@@ -83,6 +102,22 @@ p{
 }
 .close-btn:hover{
   background: #27ae60;
+  color: white;
+  transition: .5s;
+}
+.close-btn2{
+  position: absolute;
+  bottom: 12px;
+  right: 25px;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: red;
+  padding: 8px 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.close-btn2:hover{
+  background: red;
   color: white;
   transition: .5s;
 }

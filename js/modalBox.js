@@ -1,5 +1,4 @@
 var tulisan = ""
-
 function readURL_tambahkomik(input) {
        if (input.files && input.files[0]) {
            let reader = new FileReader();
@@ -50,6 +49,23 @@ function closeDrop(){
   }
 }
 
+function tengokIsi(){
+  event.preventDefault();
+  var kosong = false
+  var inputan = $(terbuka +" > .modal-konten > form").find("input");
+  console.log(inputan);
+  inputan.each(function(index, el) {
+    if ($(el).val() == "") {
+      console.log('ada yang kosong nih');
+      kosong = true;
+    }
+    else{
+      console.log('terisi');
+    }
+  });
+  return kosong;
+}
+
 var terbuka;
 function tambahKomik() {
     $("#tambah").fadeToggle();
@@ -86,10 +102,21 @@ function signout(){
       window.location.href = "index.html";
     }
 function verifikasi(){
-      $('.content').css('opacity', '1');
-      $('.content').css('visibility','visible');
-    }
+  if(tengokIsi()){
+    $('.content2').css('opacity', '1');
+    $('.content2').css('visibility','visible');
+  }else {
+    $('.content').css('opacity', '1');
+    $('.content').css('visibility','visible');
+  }
+}
 function closeverif(){
-      $('.content').css('opacity', '0');
-      $('.content').css('visibility','hidden');
-    }
+  if(tengokIsi()){
+    $('.content2').css('opacity', '0');
+    $('.content2').css('visibility','hidden');
+  }else {
+    $('.content').css('opacity', '0');
+    $('.content').css('visibility','hidden');
+    tutup();
+  }
+}

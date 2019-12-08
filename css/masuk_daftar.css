@@ -45,3 +45,87 @@ form button:hover{
     border-radius: 4px;
   }
     }
+
+    .content2{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .content2{
+      z-index: 101;
+      opacity: 0;
+      visibility: hidden;
+      width: 400px;
+      height: 350px;
+      background: white;
+      border-radius: 3px;
+      transition: .3s ease-in;
+      box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+    }
+    .header2{
+      height: 68px;
+
+      overflow: hidden;
+      border-radius: 3px 3px 0 0;
+      box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+    }
+    .header2{
+      background: red;
+    }
+.header2 h2{
+      color: white;
+      padding-left: 32px;
+      font-weight: normal;
+    }
+.header2 > .fa-times{
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      color: #e8f7fc;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    #kedua{
+      font-size: 50px;
+      color: red;
+      font-weight: bold;
+      height: 80px;
+      width: 80px;
+      border: 2px solid red;
+      text-align: center;
+      padding-top: 13px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      margin: 30px 0 0 160px;
+    }
+    .content2 p{
+      padding-top: 10px;
+      font-size: 19px;
+      color: #1a1a1a;
+      text-align: center;
+    }
+    .line{
+      position: absolute;
+      bottom: 65px;
+      width: 100%;
+      height: 1px;
+      background: silver;
+    }
+    .close-btn2{
+      position: absolute;
+      bottom: 12px;
+      right: 25px;
+      border: 1px solid red;
+      border-radius: 3px;
+      color: red;
+      padding: 8px 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .close-btn2:hover{
+      background: red;
+      color: white;
+      transition: .5s;
+    }
