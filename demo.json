@@ -1,10 +1,22 @@
-{
+[
   {
-    "nama" : "saya";
-    "kelas": "berapa";
+    "nama":"Si Abi",
+    "gambar": "img/si abi77.jpg",
+    "pengarang":"Anone"
   },
   {
-    "nama": "saya2";
-    "kelas": "berapa2";
+      "nama":"Si Juki",
+      "gambar": "img/si juki-keroyokan77.jpg",
+      "pengarang":"Suparjo"
+  },
+  {
+    "nama":"Garudayana",
+    "gambar": "img/garudayana77.jpg",
+    "pengarang":"Sukirman"
+  },
+  {
+    "nama":"Si Nopal",
+    "gambar": "img/si nopal77.jpg",
+    "pengarang":"Seattle, WA"
   }
-}
+]

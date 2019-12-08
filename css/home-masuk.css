@@ -1,6 +1,6 @@
 input[type=file]{
 padding:10px;
-background:#grey;}
+background:white;}
 
 #blah{
   max-width: 80%;
@@ -301,4 +301,9 @@ background:#grey;}
     font-size: 16px;
     font-weight: 700;
   }
+}
+
+.modal-konten button{
+  min-width: 50px;
+  
 }
