@@ -275,7 +275,7 @@ nav #find input{
 .modal-konten >form>input, .modal-konten textarea{
   text-align: center;
   width: 300px;
-  margin: 10px 0 10px 0;
+  margin: 5px 0 5px 0;
   border-radius: 4px;
 }
 .modal-konten >form>input{
@@ -285,6 +285,18 @@ nav #find input{
   text-align: left;
   position: relative;
   left:40%;
+}
+.modal-konten >form>img{
+  max-height: 180px;
+  max-width: 80%;
+}
+.modal-konten >form>p{
+  margin: 0;
+  padding: 0;
+}
+.modal-konten >button{
+  position: relative;
+  bottom: 10px;
 }
 
 .garis{

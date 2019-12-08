@@ -7,7 +7,7 @@ function readURL_tambahkomik(input) {
                $('#blah1').attr('src', e.target.result);
                let size = $(".fileSize1")[0].files[0].size;
                size = Math.floor(size/1024)
-               $("#size1").text(size + "KB")
+               $("#size1").text("Ukuran file : "+size + "KB")
            };
            reader.readAsDataURL(input.files[0]);
        }
@@ -19,7 +19,7 @@ function readURL_verifakun(input) {
               $('#blah2').attr('src', e.target.result);
               let size = $(".fileSize2")[0].files[0].size;
               size = Math.floor(size/1024)
-              $("#size2").text(size + "KB")
+              $("#size2").text("Ukuran file : "+size + "KB")
           };
           reader.readAsDataURL(input.files[0]);
       }
@@ -31,7 +31,7 @@ function readURL_editakun(input) {
                $('#blah3').attr('src', e.target.result);
                let size = $(".fileSize3")[0].files[0].size;
                size = Math.floor(size/1024)
-               $("#size3").text(size + "KB")
+               $("#size3").text("Ukuran file : "+size + "KB")
            };
            reader.readAsDataURL(input.files[0]);
        }
