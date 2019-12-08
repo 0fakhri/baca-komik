@@ -23,3 +23,7 @@ $(document).ready(function(){
   $("#result").html('');
  });
 });
+
+function hilang(){
+  $("#result").html('');
+}
