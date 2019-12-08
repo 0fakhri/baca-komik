@@ -1,13 +1,37 @@
 var tulisan = ""
 
-function readURL(input) {
+function readURL_tambahkomik(input) {
        if (input.files && input.files[0]) {
            let reader = new FileReader();
            reader.onload = function (e) {
-               $('#blah').attr('src', e.target.result);
-               let size = $(".fileSize")[0].files[0].size;
+               $('#blah1').attr('src', e.target.result);
+               let size = $(".fileSize1")[0].files[0].size;
                size = Math.floor(size/1024)
-               alert(size + "KB")
+               $("#size1").text(size + "KB")
+           };
+           reader.readAsDataURL(input.files[0]);
+       }
+   }
+function readURL_verifakun(input) {
+      if (input.files && input.files[0]) {
+          let reader = new FileReader();
+          reader.onload = function (e) {
+              $('#blah2').attr('src', e.target.result);
+              let size = $(".fileSize2")[0].files[0].size;
+              size = Math.floor(size/1024)
+              $("#size2").text(size + "KB")
+          };
+          reader.readAsDataURL(input.files[0]);
+      }
+  }
+function readURL_editakun(input) {
+       if (input.files && input.files[0]) {
+           let reader = new FileReader();
+           reader.onload = function (e) {
+               $('#blah3').attr('src', e.target.result);
+               let size = $(".fileSize3")[0].files[0].size;
+               size = Math.floor(size/1024)
+               $("#size3").text(size + "KB")
            };
            reader.readAsDataURL(input.files[0]);
        }
